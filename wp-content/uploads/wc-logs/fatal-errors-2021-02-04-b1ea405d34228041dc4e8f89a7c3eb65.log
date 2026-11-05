@@ -1,0 +1,253 @@
+2021-02-04T07:56:45+00:00 CRITICAL Uncaught Error: Class 'JRoute' not found in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/proceed-to-checkout-button.php:43
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2112): wc_get_template('cart/proceed-to...')
+#2 /home/foodnboxbm/www/foodnbox/wp-includes/class-wp-hook.php(287): woocommerce_button_proceed_to_checkout('')
+#3 /home/foodnboxbm/www/foodnbox/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#4 /home/foodnboxbm/www/foodnbox/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#5 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/templates/cart/cart-totals.php(107): do_action('woocommerce_pro...')
+#6 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/home/foodnboxb...')
+#7 /home/foodnboxbm/www/foodnbox/ dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/proceed-to-checkout-button.php à la ligne 43
+
+2021-02-04T07:57:05+00:00 CRITICAL Uncaught Error: Class 'JRoute' not found in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/proceed-to-checkout-button.php:43
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2112): wc_get_template('cart/proceed-to...')
+#2 /home/foodnboxbm/www/foodnbox/wp-includes/class-wp-hook.php(287): woocommerce_button_proceed_to_checkout('')
+#3 /home/foodnboxbm/www/foodnbox/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#4 /home/foodnboxbm/www/foodnbox/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#5 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/templates/cart/cart-totals.php(107): do_action('woocommerce_pro...')
+#6 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/home/foodnboxb...')
+#7 /home/foodnboxbm/www/foodnbox/ dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/proceed-to-checkout-button.php à la ligne 43
+
+2021-02-04T07:57:26+00:00 CRITICAL Uncaught Error: Class 'JRoute' not found in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/proceed-to-checkout-button.php:43
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2112): wc_get_template('cart/proceed-to...')
+#2 /home/foodnboxbm/www/foodnbox/wp-includes/class-wp-hook.php(287): woocommerce_button_proceed_to_checkout('')
+#3 /home/foodnboxbm/www/foodnbox/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#4 /home/foodnboxbm/www/foodnbox/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#5 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/templates/cart/cart-totals.php(107): do_action('woocommerce_pro...')
+#6 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/home/foodnboxb...')
+#7 /home/foodnboxbm/www/foodnbox/ dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/proceed-to-checkout-button.php à la ligne 43
+
+2021-02-04T12:05:11+00:00 CRITICAL Uncaught Error: Class 'JRoute' not found in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/proceed-to-checkout-button.php:39
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2112): wc_get_template('cart/proceed-to...')
+#2 /home/foodnboxbm/www/foodnbox/wp-includes/class-wp-hook.php(287): woocommerce_button_proceed_to_checkout('')
+#3 /home/foodnboxbm/www/foodnbox/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#4 /home/foodnboxbm/www/foodnbox/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#5 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/templates/cart/cart-totals.php(107): do_action('woocommerce_pro...')
+#6 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/home/foodnboxb...')
+#7 /home/foodnboxbm/www/foodnbox/ dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/proceed-to-checkout-button.php à la ligne 39
+
+2021-02-04T12:08:18+00:00 CRITICAL Uncaught Error: Class 'JRoute' not found in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/proceed-to-checkout-button.php:39
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2112): wc_get_template('cart/proceed-to...')
+#2 /home/foodnboxbm/www/foodnbox/wp-includes/class-wp-hook.php(287): woocommerce_button_proceed_to_checkout('')
+#3 /home/foodnboxbm/www/foodnbox/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#4 /home/foodnboxbm/www/foodnbox/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#5 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/templates/cart/cart-totals.php(107): do_action('woocommerce_pro...')
+#6 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/home/foodnboxb...')
+#7 /home/foodnboxbm/www/foodnbox/ dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/proceed-to-checkout-button.php à la ligne 39
+
+2021-02-04T12:10:43+00:00 CRITICAL Uncaught Error: Class 'JRoute' not found in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php:172
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 /home/foodnboxbm/ dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php à la ligne 172
+
+2021-02-04T12:11:52+00:00 CRITICAL Uncaught Error: Class 'JRoute' not found in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php:160
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 /home/foodnboxbm/ dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php à la ligne 160
+
+2021-02-04T12:16:11+00:00 CRITICAL Uncaught Error: Class 'JRoute' not found in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php:30
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 /home/foodnboxbm/w dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php à la ligne 30
+
+2021-02-04T12:21:13+00:00 CRITICAL Uncaught Error: Class 'JRoute' not found in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php:170
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 /home/foodnboxbm/ dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php à la ligne 170
+
+2021-02-04T13:30:18+00:00 CRITICAL Uncaught Error: Class 'JRoute' not found in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php:194
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 /home/foodnboxbm/ dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php à la ligne 194
+
+2021-02-04T13:31:48+00:00 CRITICAL Uncaught Error: Class 'JRoute' not found in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php:194
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 /home/foodnboxbm/ dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php à la ligne 194
+
+2021-02-04T13:32:08+00:00 CRITICAL Uncaught Error: Class 'JRoute' not found in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php:194
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 /home/foodnboxbm/ dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php à la ligne 194
+
+2021-02-04T13:32:45+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php:206
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 /ho dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php à la ligne 206
+
+2021-02-04T13:32:53+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php:206
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 /ho dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php à la ligne 206
+
+2021-02-04T14:04:37+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php:206
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 /ho dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php à la ligne 206
+
+2021-02-04T14:05:34+00:00 CRITICAL Uncaught Error: Class 'JRoute' not found in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php:218
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 /home/foodnboxbm/ dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php à la ligne 218
+
+2021-02-04T14:23:05+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php:208
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 /ho dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php à la ligne 208
+
+2021-02-04T14:26:07+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php:208
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 /ho dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php à la ligne 208
+
+2021-02-04T14:27:00+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php:208
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 /ho dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php à la ligne 208
+
+2021-02-04T14:38:00+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php:189
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 /ho dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php à la ligne 189
+
+2021-02-04T14:39:27+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php:188
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 /ho dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php à la ligne 188
+
+2021-02-04T14:40:36+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php:186
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 /ho dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php à la ligne 186
+
+2021-02-04T14:42:03+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php:190
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 /ho dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php à la ligne 190
+

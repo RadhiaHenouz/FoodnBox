@@ -1,0 +1,50 @@
+01-29-2021 @ 15:56:34 - Generating payment form for order #3343.
+01-29-2021 @ 15:56:34 - Data to be sent to payment gateway : Array
+(
+    [signature] => 833da003d449bc2324cd83b4f88358563d15054d
+    [vads_action_mode] => INTERACTIVE
+    [vads_amount] => 12500
+    [vads_capture_delay] => 
+    [vads_contrib] => WooCommerce_2.x-4.x_1.8.9/5.6_4.9.2/7.3.20
+    [vads_ctx_mode] => TEST
+    [vads_currency] => 978
+    [vads_cust_address] => rue test
+    [vads_cust_city] => fort de france
+    [vads_cust_country] => MQ
+    [vads_cust_email] => vodelys@gmail.com
+    [vads_cust_first_name] => Olivier
+    [vads_cust_id] => 1
+    [vads_cust_last_name] => Sawula
+    [vads_cust_phone] => 0628537798
+    [vads_cust_state] => 
+    [vads_cust_zip] => 97200
+    [vads_language] => fr
+    [vads_order_id] => 3343
+    [vads_order_info] => order_key=wc_order_a5NUVwP9mBfKK&amp;blog_id=0
+    [vads_page_action] => PAYMENT
+    [vads_payment_config] => SINGLE
+    [vads_redirect_error_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_error_timeout] => 5
+    [vads_redirect_success_message] => Redirection vers la boutique dans quelques instants...
+    [vads_redirect_success_timeout] => 5
+    [vads_return_mode] => GET
+    [vads_ship_to_city] => 
+    [vads_ship_to_country] => 
+    [vads_ship_to_first_name] => 
+    [vads_ship_to_last_name] => 
+    [vads_ship_to_state] => 
+    [vads_ship_to_street] => 
+    [vads_ship_to_street2] => 
+    [vads_ship_to_zip] => 
+    [vads_shipping_amount] => 0
+    [vads_site_id] => 75844822
+    [vads_totalamount_vat] => 0
+    [vads_trans_date] => 20210129145634
+    [vads_trans_id] => 537946
+    [vads_url_return] => https://foodnbox.com/?wc-api=WC_Gateway_Systempay
+    [vads_validation_mode] => 
+    [vads_version] => V2
+)
+
+01-29-2021 @ 15:56:44 - Payment failed or cancelled for order #3343. Action canceled (17).  Payment guarantee not applicable.
+01-29-2021 @ 15:56:44 - RETURN URL PROCESS END

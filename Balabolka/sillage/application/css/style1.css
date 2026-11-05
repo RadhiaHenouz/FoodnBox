@@ -1,0 +1,301 @@
+.UI_Container .Details,
+.UI_Container .ListeAttes {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: auto;
+    background: #F0F0F0;
+    padding: 10px;
+    margin-top: 20px;
+    -webkit-box-shadow: -5px 11px 51px -23px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -5px 11px 51px -23px rgba(0, 0, 0, 0.75);
+    box-shadow: -5px 11px 51px -23px rgba(0, 0, 0, 0.75);
+}
+
+#ListeAttes {}
+
+.UI_Container .Recherche {
+    margin-top: 20px;
+    margin-right: 5%;
+    margin-left: 25%;
+    margin-bottom: 40px;
+    width: auto;
+    padding: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    background: #F0F0F0;
+    display: inline-block;
+    width: auto;
+    -webkit-box-shadow: -5px 11px 51px -23px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -5px 11px 51px -23px rgba(0, 0, 0, 0.75);
+    box-shadow: -5px 11px 51px -23px rgba(0, 0, 0, 0.75);
+}
+
+.Details input[type=text] {
+    width: 450px;
+}
+
+.Details button {
+    background-color: #3D89B9;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.Generer button {
+    background-color: #339966;
+    /* Green */
+    border: none;
+    padding: 20px;
+    color: white;
+    font-size: 16px;
+    -webkit-box-shadow: -5px 7px 45px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -5px 7px 45px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: -5px 7px 45px -10px rgba(0, 0, 0, 0.75);
+}
+
+.Generer {
+    margin-top: 20px;
+}
+
+.Recherche button {
+    background-color: #339966;
+    /* Green */
+    border: none;
+    color: white;
+    font-weight: bold;
+    height: 33px;
+    width: 33px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.Recherche input[type=text] {
+    height: 30px;
+}
+
+td {
+    height: 20px;
+}
+
+.FieldLabel {
+    text-align: right;
+}
+
+input[type=text] {
+    border: 1px solid #FBF5F5;
+    background-color: #FFF;
+    padding: 2px;
+    height: 25px;
+}
+
+.Hidden,
+#AttesPrec {
+    display: none;
+}
+
+#AttesPrec {
+    text-align: center;
+}
+
+#AttesPrec a {
+    background: #339966;
+    padding: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    border-radius: 1px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.FieldLabel {
+    text-align: right;
+}
+
+input[type=text] {
+    border: 1px solid #FBF5F5;
+    padding: 2px;
+}
+
+#ListeAttes {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+#ListeAttes td,
+#ListeAttes th {
+    padding: 5px 4px;
+}
+
+#ListeAttes tbody td {
+    font-size: 13px;
+}
+
+#ListeAttes thead {
+    background: #CFCFCF;
+    background: -moz-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+    background: -webkit-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+    background: linear-gradient(to bottom, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+}
+
+#ListeAttes thead th {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
+
+/* Style the input fields */
+
+.Assure {
+    width: 30%;
+    padding: 10px;
+    outline: none;
+}
+
+.Assure:focus {
+    border: 2px solid dodgerblue;
+}
+
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    margin: 0;
+}
+
+.container {
+    display: block;
+    float: left;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    /* Center the DIV horizontally */
+}
+
+.fixed-header,
+.fixed-footer {
+    width: 100%;
+    position: fixed;
+    background-image: linear-gradient(to right, #37A1B5, #3D89B9);
+    padding: 10px 0;
+    color: #fff;
+}
+
+.fixed-header {
+    top: 0;
+}
+
+.fixed-footer {
+    bottom: 0;
+}
+
+
+/* Some more styles to beutify this example */
+
+nav a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 7px 25px;
+    display: inline-block;
+}
+
+body {
+    margin: 0;
+}
+
+.Generer button {
+    background-color: #339966;
+    /* Green */
+    border: none;
+    padding: 20px;
+    color: white;
+    font-size: 16px;
+    -webkit-box-shadow: -5px 7px 45px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -5px 7px 45px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: -5px 7px 45px -10px rgba(0, 0, 0, 0.75);
+}
+
+#menu ul {
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background: #37A1B5;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+#menu li a {
+    display: block;
+    color: #FFF;
+    padding: 10px 16px;
+    padding-top: 20px;
+    text-decoration: none;
+}
+
+li a.active {
+    color: white;
+}
+
+#menu li a:hover {
+    letter-spacing: 0.125rem;
+}
+
+table.dataTable thead th {
+    background-color: #75c9d9;
+    color: #FFF;
+}
+
+.dataTable td:not(:first-child) {
+    text-align: center;
+}
+
+.Details .FieldLabel {
+    color: green;
+}
+
+.categorie label,
+.TypeStat label {
+    margin-top: 30px;
+    margin-right: 10%;
+    font-weight: bold;
+    font-size: 25px;
+    color: green;
+}
+
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+    color: #ffffff;
+    background-color: #3D89B9;
+}
+
+.filtre {
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #eeeeee;
+}

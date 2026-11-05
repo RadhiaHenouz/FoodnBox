@@ -1,0 +1,66 @@
+table {
+    border: 2px solid #FFFFFF;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table td,
+table th {
+    border: 1px solid #FFFFFF;
+    padding: 3px 4px;
+}
+
+table tbody td {
+    font-size: 13px;
+}
+
+table thead {
+    background: #E6E6E6;
+}
+
+table thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+}
+
+table {
+    margin-left: 20%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    padding: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    overflow-y: auto;
+    /* Trigger vertical scroll    */
+    overflow-x: auto;
+}
+
+h1 {
+    margin-left: 22%;
+}
+
+thead,
+tbody {
+    display: table-header-group;
+}
+
+.UI_Container {
+    width: 100%;
+}
+
+tbody {
+    height: 400px;
+    width: 950px;
+    /* Just for the demo          */
+    overflow-y: auto;
+    /* Trigger vertical scroll    */
+    overflow-x: auto;
+    /* Hide the horizontal scroll */
+}
+
+th {
+    text-align: left;
+}

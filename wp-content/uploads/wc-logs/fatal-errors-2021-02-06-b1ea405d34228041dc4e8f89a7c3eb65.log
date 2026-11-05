@@ -1,0 +1,94 @@
+2021-02-06T02:26:14+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php:271
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 /ho dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php à la ligne 271
+
+2021-02-06T02:34:13+00:00 CRITICAL Uncaught Error: Class 'JRoute' not found in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php:292
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
+#2 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#3 /home/foodnboxbm/www/foodnbox/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
+#4 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /home/foodnboxbm/www/foodnbox/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ca...')
+#7 /home/foodnboxbm/ dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/woocommerce/cart/cart.php à la ligne 292
+
+2021-02-06T06:37:54+00:00 CRITICAL Uncaught Error: Call to a member function setSender() on null in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/inc/woocommerce/commande_groupe.php:48
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-includes/class-wp-hook.php(287): SendEmail('')
+#1 /home/foodnboxbm/www/foodnbox/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /home/foodnboxbm/www/foodnbox/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#3 /home/foodnboxbm/www/foodnbox/wp-admin/admin-ajax.php(184): do_action('wp_ajax_sendEma...')
+#4 {main}
+  thrown dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/inc/woocommerce/commande_groupe.php à la ligne 48
+
+2021-02-06T06:51:33+00:00 CRITICAL Uncaught Error: Call to a member function setSender() on null in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/inc/woocommerce/commande_groupe.php:48
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-includes/class-wp-hook.php(287): SendEmail('')
+#1 /home/foodnboxbm/www/foodnbox/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /home/foodnboxbm/www/foodnbox/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#3 /home/foodnboxbm/www/foodnbox/wp-admin/admin-ajax.php(184): do_action('wp_ajax_sendEma...')
+#4 {main}
+  thrown dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/inc/woocommerce/commande_groupe.php à la ligne 48
+
+2021-02-06T07:18:39+00:00 CRITICAL Uncaught Error: Call to a member function setSender() on null in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/inc/woocommerce/commande_groupe.php:48
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-includes/class-wp-hook.php(287): SendEmail('')
+#1 /home/foodnboxbm/www/foodnbox/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /home/foodnboxbm/www/foodnbox/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#3 /home/foodnboxbm/www/foodnbox/wp-admin/admin-ajax.php(184): do_action('wp_ajax_sendEma...')
+#4 {main}
+  thrown dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/inc/woocommerce/commande_groupe.php à la ligne 48
+
+2021-02-06T07:20:27+00:00 CRITICAL Uncaught Error: Call to a member function setSender() on null in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/inc/woocommerce/commande_groupe.php:49
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-includes/class-wp-hook.php(287): SendEmail('')
+#1 /home/foodnboxbm/www/foodnbox/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /home/foodnboxbm/www/foodnbox/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#3 /home/foodnboxbm/www/foodnbox/wp-admin/admin-ajax.php(184): do_action('wp_ajax_sendEma...')
+#4 {main}
+  thrown dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/inc/woocommerce/commande_groupe.php à la ligne 49
+
+2021-02-06T07:20:31+00:00 CRITICAL Uncaught Error: Call to a member function setSender() on null in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/inc/woocommerce/commande_groupe.php:49
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-includes/class-wp-hook.php(287): SendEmail('')
+#1 /home/foodnboxbm/www/foodnbox/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /home/foodnboxbm/www/foodnbox/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#3 /home/foodnboxbm/www/foodnbox/wp-admin/admin-ajax.php(184): do_action('wp_ajax_sendEma...')
+#4 {main}
+  thrown dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/inc/woocommerce/commande_groupe.php à la ligne 49
+
+2021-02-06T07:23:24+00:00 CRITICAL Uncaught Error: Call to a member function setSender() on null in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/inc/woocommerce/commande_groupe.php:49
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-includes/class-wp-hook.php(287): SendEmail('')
+#1 /home/foodnboxbm/www/foodnbox/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /home/foodnboxbm/www/foodnbox/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#3 /home/foodnboxbm/www/foodnbox/wp-admin/admin-ajax.php(184): do_action('wp_ajax_sendEma...')
+#4 {main}
+  thrown dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/inc/woocommerce/commande_groupe.php à la ligne 49
+
+2021-02-06T07:26:34+00:00 CRITICAL Uncaught Error: Call to a member function setSender() on null in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/inc/woocommerce/commande_groupe.php:49
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-includes/class-wp-hook.php(287): SendEmail('')
+#1 /home/foodnboxbm/www/foodnbox/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /home/foodnboxbm/www/foodnbox/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#3 /home/foodnboxbm/www/foodnbox/wp-admin/admin-ajax.php(184): do_action('wp_ajax_sendEma...')
+#4 {main}
+  thrown dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/inc/woocommerce/commande_groupe.php à la ligne 49
+
+2021-02-06T08:21:12+00:00 CRITICAL Uncaught Error: Call to a member function get_checkout_url() on null in /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/inc/woocommerce/commande_groupe.php:105
+Stack trace:
+#0 /home/foodnboxbm/www/foodnbox/wp-includes/class-wp-hook.php(287): SendEmail('')
+#1 /home/foodnboxbm/www/foodnbox/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /home/foodnboxbm/www/foodnbox/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#3 /home/foodnboxbm/www/foodnbox/wp-admin/admin-ajax.php(184): do_action('wp_ajax_sendEma...')
+#4 {main}
+  thrown dans /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/inc/woocommerce/commande_groupe.php à la ligne 105
+

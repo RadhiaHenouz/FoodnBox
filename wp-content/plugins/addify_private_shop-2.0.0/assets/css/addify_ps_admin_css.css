@@ -1,0 +1,18 @@
+
+.login_title { width: 300px; }
+
+.login_title2 { width: 700px; }
+
+.back_colour, .back_image {display: none;}
+
+.all_cats { width: auto; border: solid 1px #b6b1b1; border-radius: 4px; padding: 10px; }
+
+.par_cat { width: auto; padding: 5px; }
+
+.child_cat{ width: auto; padding:3px 15px; }
+
+.ps_privatize_products, .ps_privatize_pages, .ps_customURL, .back_colour, .back_image, .back_video, .customvideo, .youtubevideo{ display: none; }
+
+.text_title{ width: 500px; padding: 10px; }
+
+.notee{ color: red; font-size: 11px; margin-bottom: 10px; }

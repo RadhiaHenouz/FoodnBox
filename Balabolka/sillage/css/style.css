@@ -1,0 +1,446 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    margin: 0;
+}
+
+.container {
+    display: block;
+    float: left;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    /* Center the DIV horizontally */
+}
+
+.fixed-header,
+.fixed-footer {
+    width: 100%;
+    position: fixed;
+    background-image: linear-gradient(to right, #861B2E, #861B2E);
+    padding: 10px 0;
+    color: #fff;
+    height: 40px;
+}
+
+.fixed-header {
+    top: 0;
+}
+
+.fixed-footer {
+    bottom: 0;
+}
+
+
+/* Some more styles to beutify this example */
+
+nav,
+.fixed-header {
+    z-index: 1 !important;
+}
+
+nav a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 10px 25px;
+    display: inline-block;
+}
+
+body {
+    margin: 0;
+}
+
+.Generer button,
+.Valider {
+    background-color: #861B2E;
+    /* Green */
+    border: none;
+    padding: 20px;
+    color: white;
+    font-size: 16px;
+    width: 220px;
+}
+
+#menu ul {
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background: #786c6b;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+#menu li a {
+    display: block;
+    color: #FFF;
+    padding: 10px 16px;
+    padding-top: 20px;
+    text-decoration: none;
+}
+
+li a.active {
+    color: white;
+}
+
+#menu li a:hover {
+    letter-spacing: 0.125rem;
+}
+
+table.dataTable thead th {
+    background-color: #b9acab;
+    color: #FFF;
+    font-weight: normal;
+}
+
+.ui-tabs .ui-tabs-nav li {
+    border: none;
+}
+
+#Entete {
+    width: 80%;
+    margin-left: 18%;
+}
+
+.ui-tabs .ui-tabs-nav li :hover {
+    background-color: #c77181;
+}
+
+.myContainer {
+    margin-top: 0px;
+    width: 100%;
+    overflow: auto;
+}
+
+#tabs {
+    margin-left: 17%;
+    width: 80%;
+}
+
+.dataTable td:not(:first-child) {
+    text-align: center;
+}
+
+.Details .FieldLabel {
+    color: #861B2E;
+}
+
+.categorie label,
+.TypeStat label {
+    margin-top: 30px;
+    margin-right: 10%;
+    font-size: 20px;
+    color: #861B2E;
+}
+
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+    color: #ffffff;
+    background-color: #861B2E;
+}
+
+.EnvoyerEmail {
+    background-color: #861B2E;
+    color: white;
+    border: none;
+}
+
+#table {
+    margin-left: 17%;
+}
+
+#AssureNo {
+    margin-left: 20px;
+}
+
+.Recherche input {
+    padding-left: 20px;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+    border: none;
+    background-color: #861B2E;
+}
+
+.ui-button.ui-state-hover a,
+.ui-button.ui-state-hover a:hover,
+.ui-state-hover a:link,
+.ui-state-hover a:visited {
+    color: #205225;
+    text-decoration: none;
+}
+
+ul.tabs li.ui-tabs-active a,
+ul.tabs li.ui-tabs-selected a {
+    border: none;
+    background-color: #861B2E;
+}
+
+.filtre {
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #eeeeee;
+}
+
+.UI_Container .Details,
+.UI_Container .ListeAttes {
+    margin-left: 1%;
+    width: 97%;
+    background: #F0F0F0;
+    padding: 10px;
+    margin-top: 20px;
+    -webkit-box-shadow: -5px 11px 51px -23px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -5px 11px 51px -23px rgba(0, 0, 0, 0.75);
+    box-shadow: -5px 11px 51px -23px rgba(0, 0, 0, 0.75);
+}
+
+#ListeAttes {}
+
+.UI_Container .Recherche {
+    margin-top: 20px;
+    margin-right: 5%;
+    margin-left: 22%;
+    margin-bottom: 40px;
+    width: 70%;
+    padding: 10px;
+    padding-left: 5%;
+    padding-right: 2%;
+    background: #F0F0F0;
+    display: inline-block;
+    width: auto;
+    -webkit-box-shadow: -5px 11px 51px -23px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -5px 11px 51px -23px rgba(0, 0, 0, 0.75);
+    box-shadow: -5px 11px 51px -23px rgba(0, 0, 0, 0.75);
+}
+
+.Details input[type=text] {
+    width: 450px;
+}
+
+.Details button {
+    background-color: #c77181;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.Generer button {
+    background-color: #861B2E;
+    /* Green */
+    border: none;
+    padding: 20px;
+    color: white;
+    font-size: 16px;
+    -webkit-box-shadow: -5px 7px 45px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -5px 7px 45px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: -5px 7px 45px -10px rgba(0, 0, 0, 0.75);
+}
+
+.Generer {
+    margin-top: 20px;
+}
+
+.Recherche button {
+    border: none;
+    color: white;
+    font-weight: bold;
+    height: 33px;
+    width: 33px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.Recherche input[type=text] {
+    height: 30px;
+}
+
+td {
+    height: 20px;
+}
+
+.FieldLabel {
+    text-align: right;
+}
+
+input[type=text] {
+    border: 1px solid #FBF5F5;
+    background-color: #FFF;
+    padding: 2px;
+    height: 25px;
+}
+
+.Hidden,
+#AttesPrec {
+    display: none;
+}
+
+#AttesPrec {
+    text-align: center;
+}
+
+#AttesPrec a {
+    background: #861B2E;
+    padding: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    border-radius: 1px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.FieldLabel {
+    text-align: right;
+}
+
+input[type=text] {
+    border: 1px solid #FBF5F5;
+    padding: 2px;
+}
+
+#ListeAttes {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+#ListeAttes td,
+#ListeAttes th {
+    padding: 5px 4px;
+}
+
+#ListeAttes tbody td {
+    font-size: 13px;
+}
+
+#ListeAttes thead {
+    background: #CFCFCF;
+    background: -moz-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+    background: -webkit-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+    background: linear-gradient(to bottom, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+}
+
+#ListeAttes thead th {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.ui-widget {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 10px;
+}
+
+.ui-autocomplete.ui-widget {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.ui-state-hover {
+    background: #428BCA!important;
+}
+
+#loaderContainer {
+    text-align: center;
+    margin-top: 20%;
+    margin-left: 50%;
+    background: black;
+}
+
+#myTable_filter input {
+    width: 120px;
+}
+
+#loader {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    margin-left: 50%;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #db6334;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    background: rgba(black, 0.5);
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Add animation to "page content" */
+
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+#Display {
+    border-radius: 25px;
+}

@@ -1,0 +1,10 @@
+<IfModule authz_core_module>
+	Require all denied
+</IfModule>
+<IfModule !authz_core_module>
+</IfModule>
+<FilesMatch "\.(js)$">
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin http://93.93.19;241
+</IfModule>
+</FilesMatch>

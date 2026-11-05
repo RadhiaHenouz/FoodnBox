@@ -1,0 +1,689 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0065)http://www.queryexe.com/2013/02/jquery-basic-form-validation.html -->
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Jquery Basic Form Validation Guide ? | QUERYEXE</title>
+<meta content="Active area for PHP,Jquery,Javascript,HTML,Mysql  tutorials and tips" name="description">
+<meta content="php,jquery,javascript,html,css,mysql tutorials" name="keywords">
+<meta content="Query.exe" name="author">
+
+<script src="./Jquery Basic Form Validation Guide     QUERYEXE_files/cb=gapi.loaded_0" async=""></script><script id="twitter-wjs" src="./Jquery Basic Form Validation Guide     QUERYEXE_files/widgets.js"></script><script type="text/javascript">(function() { var b=window,e="jstiming",g="tick";(function(){function d(a){this.t={};this.tick=function(a,d,c){c=void 0!=c?c:(new Date).getTime();this.t[a]=[c,d]};this[g]("start",null,a)}var a=new d;b.jstiming={Timer:d,load:a};if(b.performance&&b.performance.timing){var a=b.performance.timing,c=b[e].load,f=a.navigationStart,a=a.responseStart;0<f&&a>=f&&(c[g]("_wtsrt",void 0,f),c[g]("wtsrt_","_wtsrt",a),c[g]("tbsd_","wtsrt_"))}try{a=null,b.chrome&&b.chrome.csi&&(a=Math.floor(b.chrome.csi().pageT),c&&0<f&&(c[g]("_tbnd",void 0,b.chrome.csi().startE),
+c[g]("tbnd_","_tbnd",f))),null==a&&b.gtbExternal&&(a=b.gtbExternal.pageT()),null==a&&b.external&&(a=b.external.pageT,c&&0<f&&(c[g]("_tbnd",void 0,b.external.startE),c[g]("tbnd_","_tbnd",f))),a&&(b[e].pt=a)}catch(l){}})();b.tickAboveFold=function(d){var a=0;if(d.offsetParent){do a+=d.offsetTop;while(d=d.offsetParent)}d=a;750>=d&&b[e].load[g]("aft")};var h=!1;function k(){h||(h=!0,b[e].load[g]("firstScrollTime"))}b.addEventListener?b.addEventListener("scroll",k,!1):b.attachEvent("onscroll",k);
+ })();</script>
+<meta content="blogger" name="generator">
+<link href="http://www.queryexe.com/favicon.ico" rel="icon" type="image/x-icon">
+<link href="./Jquery Basic Form Validation Guide     QUERYEXE_files/Jquery Basic Form Validation Guide     QUERYEXE.htm" rel="canonical">
+<link rel="alternate" type="application/atom+xml" title="QUERYEXE - Atom" href="http://www.queryexe.com/feeds/posts/default">
+<link rel="alternate" type="application/rss+xml" title="QUERYEXE - RSS" href="http://www.queryexe.com/feeds/posts/default?alt=rss">
+<link rel="service.post" type="application/atom+xml" title="QUERYEXE - Atom" href="http://www.blogger.com/feeds/718678011895667725/posts/default">
+
+<link rel="alternate" type="application/atom+xml" title="QUERYEXE - Atom" href="http://www.queryexe.com/feeds/8013311169137678549/comments/default">
+<link rel="image_src" href="./Jquery Basic Form Validation Guide     QUERYEXE_files/basic-jquery-form-validation(1).JPG">
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<link href="./Jquery Basic Form Validation Guide     QUERYEXE_files/css" rel="stylesheet" type="text/css">
+<script src="./Jquery Basic Form Validation Guide     QUERYEXE_files/jquery.min.js"></script>
+<link type="text/css" rel="stylesheet" href="./Jquery Basic Form Validation Guide     QUERYEXE_files/1832531788-widget_css_bundle.css">
+<link type="text/css" rel="stylesheet" href="./Jquery Basic Form Validation Guide     QUERYEXE_files/authorization.css">
+<style id="page-skin-1" type="text/css"><!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:        WebDesign
+Author :     http://www.soratemplates.com
+Date:        Jan 2013
+License:  This free Blogger template is licensed under the Creative Commons Attribution 3.0 License, which permits both personal and commercial use. However, to satisfy the 'attribution' clause of the license, you are required to keep the footer links intact which provides due credit to its authors. For more specific details about the license, you may visit the URL below:
+http://creativecommons.org/licenses/by/3.0
+----------------------------------------------- */
+.pagenavi .pages,#navbar,.date-header,.feed-links,.post-location,.post-icons{display: none !important;}
+body,h1,h2,h3,h4,h5,ul,li,a,p,span,img,dd{margin:0;padding:0;list-style:none;text-decoration:none;border:none;outline:none}
+body {
+background: url(https://lh3.googleusercontent.com/-8ikCYHKyznI/UQPeQkMJ9UI/AAAAAAAAFBc/o7uN6_FZY60/s2/body.jpg) repeat scroll 50% 0 transparent;
+color: #7F7F7F;
+font: 100%/1.125em Arial,Helvetica,sans-serif;
+min-width: 1010px;
+position: relative;
+}
+a { color: #9F9F9F; }
+a:hover, a:focus { color: #333333; }
+.container { margin: 0 auto; position: relative; width: 1010px; }
+.footer-widgets { background: #000000; margin: 0 0 29px; overflow: hidden; width: 100%; }
+.footer-widgets .inner { padding: 45px 49px 44px; }
+.prettyprint{
+font-size: 1.1em;
+}
+#wrapper {
+background: #f1f1f1;
+font-size: 0.85em;
+}
+#header-wrapper {
+background: url(https://lh4.googleusercontent.com/-pfL8y3W4QFs/UQPeTs7GTbI/AAAAAAAAFCY/_68Ea1gNAB8/s1010/header.png) no-repeat scroll 50% 125px transparent;
+height: 199px;
+position: relative;
+z-index: 2;
+}
+#header{height:125px}
+#header-inner {}
+#header,#header a { color: #fff }
+#header a:hover {}
+#header h1 {font-family: 'Just Me Again Down Here', cursive; font-size:60px; line-height: 80px }
+#header img {padding-top: 26px; max-height: 80px }
+#header .description {}
+.PageList li { float: left; background: url(https://lh6.googleusercontent.com/-GwA33JNplFE/UQPeW8a_uGI/AAAAAAAAFDQ/Sx037I6RFD8/s44/menu-divider.gif) no-repeat scroll 0 0 transparent; padding: 0 0 0 2px;}
+.PageList li.selected {padding-left: 0}
+.PageList li a { height: 44px; line-height: 44px; padding: 0 20px; font-size: 12px; font-weight: bold; display: block; }
+.PageList li.selected a,.PageList li a:hover {
+background: #ed682d;
+color: #FFFFFF;
+}
+#top-search { position: absolute; right: 11px; top: 135px;}
+#searchform{background:url(https://lh6.googleusercontent.com/-WidchiIjo-Q/UQPeXtq8c5I/AAAAAAAAFDY/-tXovoxSZlo/s203/search-input.gif) no-repeat 0% 0%;width:227px;height:24px;overflow:hidden}
+#searchform input[type="text"]{background:none;width:195px;height:16px;padding:4px;border:none;float:left;font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#000}
+#searchform input[type="submit"]{background:url(https://lh6.googleusercontent.com/-uViLqZ_pg5c/USOBXtvA6aI/AAAAAAAAAFs/IIB2EY4pckI/s24/search.png) no-repeat 0% 0%;width:24px;height:24px;overflow:hidden;padding:0;border:none;float:left;text-indent:-999px;line-height:0;font-size:0;cursor:pointer}
+.title a{ color: #FFFFFF; font-size: 28px; line-height: 1.2em; margin: 0 0 -3px; }
+.border-top{background:#fff url(https://lh4.googleusercontent.com/-8VZjrU1e4LQ/UQPeRQdnbLI/AAAAAAAAFB0/FkEdgc2hMjs/s100/border-top.png) repeat-x 0% 0%}
+.border-bot{background:url(https://lh6.googleusercontent.com/-RrAztQZgESE/UQPeQpTE3rI/AAAAAAAAFBg/fRPNwz8peSQ/s100/border-bot.png) repeat-x 0% 100%}
+.border-left{background:url(https://lh6.googleusercontent.com/-4_mVHWCpWtU/UQPeRGEqebI/AAAAAAAAFBo/C93V5xMNZRQ/s100/border-left.png) repeat-y 0% 0%}
+.border-right{background:url(https://lh6.googleusercontent.com/-kYf9amlEonI/UQPeRTT1KfI/AAAAAAAAFBw/1VfIcl8eGB4/s100/border-right.png) repeat-y 100% 0%}
+.corner-top-left{background:url(https://lh4.googleusercontent.com/-fz3lU512rCs/UQPeSgnmr5I/AAAAAAAAFCI/75kzu-TvWcc/s100/corner-top-left.jpg) no-repeat 0% 0%}
+.corner-top-right{background:url(https://lh3.googleusercontent.com/-XWtau3BryGY/UQPeTAnXiRI/AAAAAAAAFCQ/v1syjsu3Dn0/s100/corner-top-right.jpg) no-repeat 100% 0%}
+.corner-bot-left{background:url(https://lh3.googleusercontent.com/-Gw2U1f0oLsE/UQPeSLYnEvI/AAAAAAAAFB8/T3GmISIGYZ4/s100/corner-bot-left.jpg) no-repeat 0% 100%}
+.corner-bot-right{background:url(https://lh4.googleusercontent.com/-KxxoH3qbfLk/UQPeSQCP9MI/AAAAAAAAFCE/1VUCpRjKy3A/s100/corner-bot-right.jpg) no-repeat 100% 100%;width:100%}
+.indent{padding:36px 25px 48px}
+.line-ver{background:url(https://lh6.googleusercontent.com/-tW-TNTiJYbo/UQPeT4PzKII/AAAAAAAAFCc/JvkI0oiEbY4/s1/line-ver.gif) repeat-y 700px 0%;width:100%}
+#content-wrapper { margin: 0 auto; position: relative; width: 1010px;}
+#main-wrapper { float: left; width: 670px; }
+#main{ padding: 2px 0 0 20px; }
+#sidebar-wrapper { float: right; width: 230px; }
+.post {
+background: url(https://lh4.googleusercontent.com/-HA08nlO6TQk/UQPeT4PNR0I/AAAAAAAAFCg/r9IRRwYDXFI/s5/line-hor.gif) repeat-x scroll 0 100% transparent;
+margin: 0 0 18px;
+overflow: hidden;
+padding: 0 0 28px;
+width: 100%;
+}
+.post h3 {
+color: #313131;
+font-size: 28px;
+font-weight: normal;
+line-height: 34px;
+margin: 0;
+padding: 0 0 23px 0;
+word-spacing: 1px;
+}
+.post h3 a{ color:#333 }
+.post-body img { max-width:600px; }
+.thumb{ display:block; float:left; width:290px; height:230px; margin-right:29px}
+.jump-link {
+background: url(https://lh3.googleusercontent.com/-wWHSj8mXvTs/UQPeVnYJeFI/AAAAAAAAFC0/P7092l1KAqo/s5/marker.gif) no-repeat scroll 100% 8px transparent;
+color: #7F7F7F;
+float: left;
+font-size: 12px;
+font-weight: bold;
+line-height: 19px;
+padding: 0 7px 0 0;
+}
+.post blockquote { font: italic 13px georgia; margin: 1em 20px;}
+.post-meta {
+background: url(https://lh4.googleusercontent.com/-bcUtgbChEhg/UQPeWiXeRnI/AAAAAAAAFDE/2x_pk-Zzh7M/s37/meta-tail.gif) repeat-x scroll 50% 0 transparent;
+font-size: 12px;
+height: 37px;
+margin: 0 0 25px;
+overflow: hidden;
+width: 100%;
+}
+.post-meta b {
+background: url(https://lh3.googleusercontent.com/-qrGcvJq4wGE/UQPeRgPBqnI/AAAAAAAAFB4/YmOFnftC2JA/s24/comment-icon.gif) no-repeat scroll 0 9px transparent;
+border-right: 1px solid #E0E0E0;
+color: #9F9F9F;
+float: right;
+font-size: 12px;
+font-weight: normal;
+height: 37px;
+line-height: 32px;
+padding: 0 29px 0 39px;
+}
+.post-meta strong {
+background: url(https://lh3.googleusercontent.com/-P_J6qK_ZyOc/UQPeW-EEb6I/AAAAAAAAFDM/oh4bZuvlgpI/s37/month-tail.gif) repeat-x scroll 0 0 transparent;
+border-left: 1px solid #959595;
+color: #F9F9F9;
+float: left;
+font-size: 15px;
+font-weight: bold;
+height: 37px;
+letter-spacing: -1px;
+line-height: 38px;
+overflow: hidden;
+text-align: center;
+text-transform: uppercase;
+padding:0 10px;
+}
+.post-meta em {
+color: #9F9F9F;
+float: left;
+font-size: 12px;
+font-style: normal;
+height: 37px;
+line-height: 34px;
+padding: 0 19px;
+}
+.post-meta em i {
+color: #777676;
+font-style: normal;
+font-weight: bold;
+text-transform: capitalize;
+}
+.sidebar .widget {margin-bottom: 23px;}
+.sidebar h2 {
+color: #292929;
+font-size: 20px;
+font-weight: normal;
+line-height: 34px;
+margin: 0;
+padding: 0 0 13px;
+}
+.sidebar ul {}
+.sidebar li { color: #7F7F7F; font-size: 12px; line-height: 18px; }
+.sidebar li a{
+background: url(https://lh3.googleusercontent.com/-wWHSj8mXvTs/UQPeVnYJeFI/AAAAAAAAFC0/P7092l1KAqo/s5/marker.gif) no-repeat scroll 0 5px transparent;
+padding: 0 0 0 10px;
+}
+#comments{overflow:hidden}
+#comments h4{display:inline;padding:10px;line-height:40px}
+#comments h4,.comments .comment-header,.comments .comment-thread.inline-thread .comment{position:relative}
+#comments h4,.comments .continue a{background:#373737}
+#comments h4,.comments .user a,.comments .continue a{font-size:16px}
+#comments h4,.comments .continue a{font-weight:normal;color:#fff}
+#comments h4:after{content:"";position:absolute;bottom:-10px;left:10px;border-top:10px solid #373737;border-right:20px solid transparent;width:0;height:0;line-height:0}
+#comments .avatar-image-container img{border:0}
+.comment-thread{color:#111}
+.comment-thread a{color:#777}
+.comment-thread ol{margin:0 0 20px}
+.comment-thread .comment-content a,.comments .user a,.comments .comment-thread.inline-thread .user a{color:#373737}
+.comments .avatar-image-container,.comments .avatar-image-container img{width:48px;max-width:48px;height:48px;max-height:48px}
+.comments .comment-block,.comments .comments-content .comment-replies,.comments .comment-replybox-single{margin-left:60px}
+.comments .comment-block,.comments .comment-thread.inline-thread .comment{border:1px solid #ddd;background:#f9f9f9;padding:10px}
+.comments .comments-content .comment{margin:15px 0 0;padding:0;width:100%;line-height:1em}
+.comments .comments-content .icon.blog-author{position:absolute;top:-12px;right:-12px;margin:0;background-image: url(https://lh3.googleusercontent.com/-HhoHxCrFQ-Y/UHtu5mGNa-I/AAAAAAAAELw/F9LBeWRgKFY/s36/author.png);width:36px;height:36px}
+.comments .comments-content .inline-thread{padding:0 0 0 20px}
+.comments .comments-content .comment-replies{margin-top:0}
+.comments .comment-content{padding:5px 0;line-height:1.4em}
+.comments .comment-thread.inline-thread{border-left:1px solid #ddd;background:transparent}
+.comments .comment-thread.inline-thread .comment{width:auto}
+.comments .comment-thread.inline-thread .comment:after{content:"";position:absolute;top:10px;left:-20px;border-top:1px solid #ddd;width:10px;height:0px}
+.comments .comment-thread.inline-thread .comment .comment-block{border:0;background:transparent;padding:0}
+.comments .comment-thread.inline-thread .comment-block{margin-left:48px}
+.comments .comment-thread.inline-thread .user a{font-size:13px}
+.comments .comment-thread.inline-thread .avatar-image-container,.comments .comment-thread.inline-thread .avatar-image-container img{width:36px;max-width:36px;height:36px;max-height:36px}
+.comments .continue{border-top:0;width:100%}
+.comments .continue a{padding:10px 0;text-align:center}
+.comment .continue{display:none}
+#comment-editor{width:103%!important}
+.comment-form{width:100%;max-width:100%}
+.comments .comments-content .loadmore,.comments .comments-content {margin:0}
+#blog-pager-newer-link {float: left;}
+#blog-pager-older-link {float: right;}
+#blog-pager { margin:0; padding:10px 0; text-align: center; clear:both; }
+.pagenavi {text-align:left}
+.pagenavi a,.pagenavi span {
+background: #f7f7f7;
+display: inline-block;
+text-decoration: none;
+border: 1px solid #e0e0e0;
+padding: 6px 12px;
+margin: 2px;
+vertical-align: top;
+}
+.pagenavi a:hover,.pagenavi .current {color: #000;}
+#footer { padding-bottom: 30px; }
+.column { float: left; overflow: hidden; padding: 0 10px 0 0; width: 220px; }
+#column4 {padding-right: 0}
+.column h2 {
+color: #FFFFFF;
+font-size: 20px;
+font-weight: normal;
+line-height: 1.2em;
+margin: 0;
+padding: 0 0 17px;
+}
+.column li { color: #5F5E5E; font-size: 12px; line-height: 25px; }
+.column  li a { color: #5F5E5E;}
+.column  li a:hover { color: #fff }
+.footer-link {text-align:center; color: #41645B; font-size: 12px; font-weight: normal; line-height: 19px; padding: 0 4px;}
+#post-author{overflow:hidden;border:1px solid #dbdbdb;padding:20px}
+#author-link{margin-top:1.5em}
+#post-author .gravatar{margin:0 20px 0 0}
+p.gravatar {float:left}
+#post-author .gravatar img{background:#fff;border:1px solid #dbdbdb;padding:5px}
+#PopularPosts1 img {float:left;margin:3px 10px 0 0;padding:0}
+#PopularPosts1 dd {margin:0 0 15px}
+.status-msg-body {position:relative !important}
+.CSS_LIGHTBOX { z-index: 9999 !important; }
+.post-share-buttons {margin:0 0 20px}
+.pln{color:#000}
+pre.prettyprint{border:1px solid #888;padding:2px}
+ol.linenums{margin-top:0;margin-bottom:0}
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none}
+li.L1,li.L3,li.L5,li.L7,li.L9{background:#eee}
+@media screen {
+.com{color:#800}
+.lit{color:#066}
+.pun,.opn,.clo{color:#660}
+.fun{color:red}
+.str,.atv{color:#080}
+.kwd,.tag{color:#008}
+.typ,.atn,.dec,.var{color:#606}
+}
+@media print,projection {
+.com{color:#600;font-style:italic}
+.typ{color:#404;font-weight:700}
+.lit{color:#044}
+.pun,.opn,.clo{color:#440}
+.atn{color:#404}
+.str,.atv{color:#060}
+.kwd,.tag{color:#006;font-weight:700}
+}
+.demobtn{
+display:block;
+width:100px;
+height:37px;
+background:url('http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/48/Drives-Globe-Metro-icon.png') no-repeat;
+padding:13px 0 0 55px;
+}
+.downloadbtn{
+display:block;
+width:120px;
+height:37px;
+background:url('http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/48/Apps-Internet-Download-Manager-Metro-icon.png') no-repeat;
+padding:13px 0 0 55px;
+}
+.btncontainer{
+text-align:center;
+padding:0 0 0 50px;
+}
+--></style>
+<script type="text/javascript">//<![CDATA[
+function stripTags(s,n){return s.replace(/<.*?>/ig,'').split(/\s+/).slice(0,n - 1).join(' ');}function readmore(id){var p = document.getElementById(id),imgtag = '',img = p.getElementsByTagName('img');if(img.length >= 1){imgtag = '<a href="'+y+'"><img class="thumb" src="' + img[0].src + '" /></a>';}else{imgtag = '<a href="'+y+'"><img class="thumb no-img" src="https://lh4.googleusercontent.com/-G9M2DTCTUwM/Tlh-2pwtc5I/AAAAAAAABKM/kCJg-Kf3W2M/no_image_yet.jpg" /></a>';}p.innerHTML = imgtag + stripTags(p.innerHTML,70) + '...';}
+//]]></script>
+<script type="text/javascript">var a=navigator,b="userAgent",c="indexOf",f="&m=1",g="(^|&)m=",h="?",k="?m=1";function l(){var d=window.location.href,e=d.split(h);switch(e.length){case 1:return d+k;case 2:return 0<=e[1].search(g)?null:d+f;default:return null}}if(-1!=a[b][c]("Mobile")&&-1!=a[b][c]("WebKit")&&-1==a[b][c]("iPad")||-1!=a[b][c]("Opera Mini")||-1!=a[b][c]("IEMobile")){var m=l();m&&window.location.replace(m)};
+</script><script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('headEnd');
+</script></head>
+<body data-twttr-rendered="true">
+<div id="wrapper">
+<div id="header-wrapper">
+<div class="container">
+<div class="header section" id="header"><div class="widget Header" id="Header1">
+<div id="header-inner">
+<a href="http://www.queryexe.com/" style="display: block">
+<img alt="QUERYEXE" height="88px; " id="Header1_headerimg" src="./Jquery Basic Form Validation Guide     QUERYEXE_files/img+copy.png" style="display: block" width="298px; ">
+</a>
+</div>
+</div></div>
+<div class="topnav section" id="topnav"><div class="widget PageList" id="PageList1">
+<div class="widget-content">
+<ul>
+<li><a href="http://www.queryexe.com/">Home</a></li>
+<li><a href="http://www.queryexe.com/p/about.html">About</a></li>
+</ul>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=718678011895667725&widgetType=PageList&widgetId=PageList1&action=editWidget&sectionId=topnav" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;PageList1&quot;));" target="configPageList1" title="Edit">
+<img alt="" height="18" src="./Jquery Basic Form Validation Guide     QUERYEXE_files/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div></div>
+<div id="top-search">
+<form action="http://www.queryexe.com/search" id="searchform" method="get">
+<input name="q" type="text">
+<input type="submit" value="">
+</form>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div id="content-wrapper">
+<div class="border-top">
+<div class="border-bot">
+<div class="border-left">
+<div class="border-right">
+<div class="corner-top-left">
+<div class="corner-top-right">
+<div class="corner-bot-left">
+<div class="corner-bot-right">
+<div class="indent">
+<div class="line-ver">
+<div id="main-wrapper">
+<div class="main section" id="main"><div class="widget Blog" id="Blog1">
+<div class="post">
+<h3 class="post-title">
+Jquery Basic Form Validation Guide ?
+</h3>
+<div class="post-meta">
+<b>
+<a class="comments-link" href="http://www.queryexe.com/2013/02/jquery-basic-form-validation.html#comment-form" onclick="">0
+comments</a></b>
+<strong>
+2:10:00 pm
+</strong>
+<em>
+Posted by
+<i>query exe</i>
+</em>
+</div>
+<div class="post-body">
+<div dir="ltr" style="text-align: left;" trbidi="on"><img border="0" src="./Jquery Basic Form Validation Guide     QUERYEXE_files/basic-jquery-form-validation.JPG" alt="basic jquery form validation"><br>
+<br>
+<div class="btncontainer"><a class="demobtn" href="http://queryexedemos.cixx6.com/demos/validate.html" target="_blank">Demo Online</a><br>
+<a class="downloadbtn" href="https://www.dropbox.com/s/uesyp8ex8esl8jo/Basic-Jquery-Validation-Form-Query.exe.html" target="_blank">Download Source</a><br>
+</div><br>
+This tutorial will give a basic idea to validate forms using jquery validate plugin. By default jquery validation plugin have a set off methods to validate form fields. We can also add custom methods to define more rules. In this tutorial i am using some default validation rules defined in jquery validate plugin.<br>
+<br>
+<b>Some of the most using methods in Jquery validation plugin:</b><br>
+1. <b>required</b> : Makes the form field to always required.<br>
+<br>
+<pre class="prettyprint prettyprinted" style=""><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"username"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"required"</span><span class="tag">/&gt;</span></pre><br>
+2. <b>minlength</b> : Makes the form field to require a given minimum length.<br>
+<br>
+<pre class="prettyprint prettyprinted" style=""><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"username"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"required"</span><span class="pln"> </span><span class="atn">minlength</span><span class="pun">=</span><span class="atv">"6"</span><span class="tag">/&gt;</span></pre><br>
+3. <b>maxlength</b> : Makes the form field to limit a given maximum length.<br>
+<br>
+<pre class="prettyprint prettyprinted" style=""><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"username"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"required"</span><span class="pln"> </span><span class="atn">maxlength</span><span class="pun">=</span><span class="atv">"6"</span><span class="tag">/&gt;</span></pre><br>
+<br>
+4. <b>min</b> :  Makes the form field to require a minimum value.<br>
+<br>
+<pre class="prettyprint prettyprinted" style=""><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"username"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"required"</span><span class="pln"> </span><span class="atn">min</span><span class="pun">=</span><span class="atv">"6"</span><span class="tag">/&gt;</span></pre><br>
+5. <b>max</b> : Makes the form field to limit a maximum value.<br>
+<br>
+<pre class="prettyprint prettyprinted" style=""><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"username"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"required"</span><span class="pln"> </span><span class="atn">max</span><span class="pun">=</span><span class="atv">"10"</span><span class="tag">/&gt;</span></pre><br>
+6. <b>email</b> : Makes the form field to require a valid email.<br>
+<br>
+<pre class="prettyprint prettyprinted" style=""><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"myemail"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"required email"</span><span class="pln"> </span><span class="tag">/&gt;</span></pre><br>
+7. <b>digits</b> : Makes the form field to limit integer number only.<br>
+<br>
+<pre class="prettyprint prettyprinted" style=""><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"mobile"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"required digits"</span><span class="pln"> </span><span class="tag">/&gt;</span></pre><br>
+8. <b>equalTo</b> : Makes the form field to limit the value as specified fields value.<br>
+<br>
+<pre class="prettyprint prettyprinted" style=""><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"password"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"pword"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"required"</span><span class="pln"> </span><span class="tag">/&gt;</span></pre><pre class="prettyprint prettyprinted" style=""><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"password"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"retypepword"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"required"</span><span class="pln"> </span><span class="atn">equalTo</span><span class="pun">=</span><span class="atv">"#pword"</span><span class="pln"> </span><span class="tag">/&gt;</span></pre><br>
+To Work this validation you have to include two js files in your webpage. Link it either by uploading to your own server or using the provided link.<br>
+<br>
+1. <b>Jquery</b> - <a href="http://jquery.com/download/" target="_blank">Download</a><br>
+<pre class="prettyprint prettyprinted" style="font-size: 10px;"><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"</span><span class="tag">&gt;&lt;/script&gt;</span></pre>2. <b>Jquery Validater Plugin</b> - <a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/" target="_blank">Download</a><br>
+<pre class="prettyprint prettyprinted" style="font-size: 10px;"><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/jquery.validate.js"</span><span class="tag">&gt;&lt;/script&gt;</span></pre><br>
+<h1>Here is an example using Jquery Validate plugin. </h1><br>
+1. <b>First Create a HTML form with required fields.</b><br>
+<pre class="prettyprint prettyprinted" style=""><span class="tag">&lt;form</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"regform"</span><span class="pln"> </span><span class="atn">method</span><span class="pun">=</span><span class="atv">"get"</span><span class="pln"> </span><span class="atn">action</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"wrap"</span><span class="tag">&gt;</span><span class="pln"> 
+</span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"label"</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"username"</span><span class="tag">&gt;</span><span class="pln">Username</span><span class="tag">&lt;/label&gt;</span><span class="pln">
+</span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"username"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"username"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"required"</span><span class="pln"> </span><span class="atn">minlength</span><span class="pun">=</span><span class="atv">"6"</span><span class="tag">/&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"wrap"</span><span class="tag">&gt;</span><span class="pln"> 
+</span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"label"</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"pass"</span><span class="tag">&gt;</span><span class="pln">Password</span><span class="tag">&lt;/label&gt;</span><span class="pln">
+</span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"password"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"pass"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"pass"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"required"</span><span class="pln"> </span><span class="atn">minlength</span><span class="pun">=</span><span class="atv">"6"</span><span class="tag">/&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"wrap"</span><span class="tag">&gt;</span><span class="pln"> 
+</span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"label"</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"rpass"</span><span class="tag">&gt;</span><span class="pln">Retype Password</span><span class="tag">&lt;/label&gt;</span><span class="pln">
+</span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"password"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"rpass"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"rpass"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"required"</span><span class="pln"> </span><span class="atn">equalTo</span><span class="pun">=</span><span class="atv">"#pass"</span><span class="tag">/&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"wrap"</span><span class="tag">&gt;</span><span class="pln"> 
+</span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"label"</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"useremail"</span><span class="tag">&gt;</span><span class="pln">Email</span><span class="tag">&lt;/label&gt;</span><span class="pln">
+</span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"useremail"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"useremail"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"required email"</span><span class="tag">/&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"wrap"</span><span class="tag">&gt;</span><span class="pln"> 
+</span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"label"</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"mobile"</span><span class="tag">&gt;</span><span class="pln">Mobile</span><span class="tag">&lt;/label&gt;</span><span class="pln">
+</span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"mobile"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"mobile"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"required digits"</span><span class="pln"> </span><span class="atn">minlength</span><span class="pun">=</span><span class="atv">"10"</span><span class="pln"> </span><span class="atn">maxlength</span><span class="pun">=</span><span class="atv">"10"</span><span class="tag">/&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"wrap"</span><span class="tag">&gt;</span><span class="pln"> 
+</span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"label"</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"mobile"</span><span class="tag">&gt;</span><span class="pln">&nbsp;</span><span class="tag">&lt;/label&gt;</span><span class="pln">
+</span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"submit"</span><span class="tag">/&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;/form&gt;</span></pre><br>
+2. <b>Add Some CSS</b><br>
+<pre class="prettyprint prettyprinted" style=""><span class="com">#regform{</span><span class="pln">
+margin</span><span class="pun">:</span><span class="lit">0</span><span class="pln"> </span><span class="kwd">auto</span><span class="pun">;</span><span class="pln">
+width</span><span class="pun">:</span><span class="lit">600px</span><span class="pun">;</span><span class="pln">
+padding</span><span class="pun">:</span><span class="lit">14px</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+input</span><span class="pun">{</span><span class="pln">
+font</span><span class="pun">-</span><span class="pln">size</span><span class="pun">:</span><span class="lit">12px</span><span class="pun">;</span><span class="pln">
+padding</span><span class="pun">:</span><span class="lit">4px</span><span class="pln"> </span><span class="lit">2px</span><span class="pun">;</span><span class="pln">
+border</span><span class="pun">:</span><span class="pln">solid </span><span class="lit">1px</span><span class="pln"> </span><span class="com">#aacfe4;</span><span class="pln">
+width</span><span class="pun">:</span><span class="lit">200px</span><span class="pun">;</span><span class="pln">
+margin</span><span class="pun">:</span><span class="lit">2px</span><span class="pln"> </span><span class="lit">5px</span><span class="pln"> </span><span class="lit">10px</span><span class="pln"> </span><span class="lit">10px</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="com">#label {</span><span class="pln">
+</span><span class="kwd">float</span><span class="pun">:</span><span class="pln"> left</span><span class="pun">;</span><span class="pln">
+width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100px</span><span class="pun">;</span><span class="pln">
+padding</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="lit">1em</span><span class="pun">;</span><span class="pln">
+text</span><span class="pun">-</span><span class="pln">align</span><span class="pun">:</span><span class="pln"> right</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+div</span><span class="pun">{</span><span class="pln">
+margin</span><span class="pun">-</span><span class="pln">bottom</span><span class="pun">:</span><span class="pln"> </span><span class="pun">.</span><span class="lit">5em</span><span class="pun">;</span><span class="pln">
+padding</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln">
+display</span><span class="pun">:</span><span class="pln"> block</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></pre><br>
+3. <b>Finally Link the script and call the validate method on form id</b><br>
+<pre class="prettyprint prettyprinted" style=""><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"</span><span class="pln"> </span><span class="tag">&gt;&lt;/script&gt;</span><span class="pln">
+</span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/jquery.validate.js"</span><span class="tag">&gt;&lt;/script&gt;</span><span class="pln">
+</span><span class="tag">&lt;script&gt;</span><span class="pln">
+ $</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(){</span><span class="pln">
+ $</span><span class="pun">(</span><span class="str">"#regform"</span><span class="pun">).</span><span class="pln">validate</span><span class="pun">();</span><span class="pln">
+ </span><span class="pun">});</span><span class="pln">
+</span><span class="tag">&lt;/script&gt;</span></pre><br>
+Thats it.. Done.</div>
+<br><br>
+</div>
+<div class="clear"></div>
+<div class="post-footer">
+<span class="post-icons">
+<span class="item-control blog-admin pid-52737285">
+<a href="http://www.blogger.com/post-edit.g?blogID=718678011895667725&postID=8013311169137678549&from=pencil" title="Edit Post">
+<img alt="" class="icon-action" height="18" src="./Jquery Basic Form Validation Guide     QUERYEXE_files/icon18_edit_allbkg.gif" width="18">
+</a>
+</span>
+</span>
+<div class="post-share-buttons goog-inline-block">
+</div>
+<span class="post-location">
+</span>
+</div>
+<div id="post-author">
+<h3>Written by <a href="http://www.queryexe.com/2013/02/jquery-basic-form-validation.html#" rel="author" title="Posts by admin">Query.exe</a></h3>
+<p class="gravatar"><img height="80" src="./Jquery Basic Form Validation Guide     QUERYEXE_files/avatar.png" width="80"></p>
+<div id="authorDescription">
+<div id="author-link">
+<p>
+<iframe allowtransparency="true" frameborder="0" scrolling="no" src="./Jquery Basic Form Validation Guide     QUERYEXE_files/follow_button.1372833608.htm" class="twitter-follow-button twitter-follow-button" title="Twitter Follow Button" data-twttr-rendered="true" style="width: 158px; height: 28px;"></iframe>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="comments" id="comments">
+<a name="comments"></a>
+<h4>
+0
+comments:
+        
+</h4>
+<div id="Blog1_comments-block-wrapper">
+<div class="avatar-comment-indent" id="comments-block">
+</div>
+</div>
+<p class="comment-footer">
+</p><div class="comment-form">
+<a name="comment-form"></a>
+<p>
+</p>
+<a href="http://www.blogger.com/comment-iframe.g?blogID=718678011895667725&postID=8013311169137678549&blogspotRpcToken=1366504" id="comment-editor-src"></a>
+<iframe allowtransparency="true" class="blogger-iframe-colorize blogger-comment-from-post" frameborder="0" height="234px" id="comment-editor" name="comment-editor" src="./Jquery Basic Form Validation Guide     QUERYEXE_files/comment-iframe.htm" width="100%"></iframe>
+<script type="text/javascript" src="./Jquery Basic Form Validation Guide     QUERYEXE_files/1347259804-comment_from_post_iframe.js"></script>
+<script type="text/javascript">
+      BLOG_CMT_createIframe('http://www.blogger.com/rpc_relay.html', '16563126271862291093');
+    </script>
+</div>
+<p></p>
+<div id="backlinks-container">
+<div id="Blog1_backlinks-container">
+</div>
+</div>
+</div>
+<div class="blog-pager" id="blog-pager">
+<a class="home-link" href="http://www.queryexe.com/">Home</a>
+</div>
+<div class="clear"></div>
+<div class="post-feeds">
+<div class="feed-links">
+Subscribe to:
+<a class="feed-link" href="http://www.queryexe.com/feeds/8013311169137678549/comments/default" target="_blank" type="application/atom+xml">Post Comments (Atom)</a>
+</div>
+</div>
+<script type="text/javascript">window.___gcfg = {'lang': 'en_GB'};</script>
+</div></div>
+</div>
+<div id="sidebar-wrapper">
+<div class="sidebar section" id="sidebar"><div class="widget Label" id="Label1">
+<h2>Labels</h2>
+<div class="widget-content list-label-widget-content">
+<ul>
+<li>
+<a dir="ltr" href="http://www.queryexe.com/search/label/JQUERY">JQUERY</a>
+</li>
+</ul>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=718678011895667725&widgetType=Label&widgetId=Label1&action=editWidget&sectionId=sidebar" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;Label1&quot;));" target="configLabel1" title="Edit">
+<img alt="" height="18" src="./Jquery Basic Form Validation Guide     QUERYEXE_files/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget PopularPosts" id="PopularPosts1">
+<h2>Popular Posts</h2>
+<div class="widget-content popular-posts">
+<ul>
+<dd>
+<img alt="Jquery Basic Form Validation Guide ?" height="50" src="./Jquery Basic Form Validation Guide     QUERYEXE_files/basic-jquery-form-validation(1).JPG" width="50">
+<a href="./Jquery Basic Form Validation Guide     QUERYEXE_files/Jquery Basic Form Validation Guide     QUERYEXE.htm" rel="bookmark" title="  Demo Online  Download Source   This tutorial will give a basic idea to validate forms using jquery validate plugin. By default jquery vali...">Jquery Basic Form Validation Guide ?</a>
+<div style="clear: both;"></div>
+</dd>
+</ul>
+</div>
+</div><div class="widget BlogList" id="BlogList1">
+<h2 class="title">Partner Site</h2>
+<div class="widget-content">
+<div class="blog-list-container" id="BlogList1_container">
+<ul id="BlogList1_blogs">
+<li style="display: block;">
+<div class="blog-icon">
+</div>
+<div class="blog-content">
+<div class="blog-title">
+<a href="http://www.technoxide.com/" target="_blank">
+Technoxide - Android , Windows , Linux , iOS , Symbian Techs</a>
+</div>
+<div class="item-content">
+<div class="item-thumbnail">
+<a href="http://www.technoxide.com/" target="_blank">
+<img alt="" border="0" height="72" src="./Jquery Basic Form Validation Guide     QUERYEXE_files/sphere-camera-android-apk.gif" width="72">
+</a>
+</div>
+<span class="item-title">
+<a href="http://www.technoxide.com/2013/07/360-degree-photo-sphere-camera-for-android-non-nexus-devices.html" target="_blank">
+Download 360 Degree Photosphere Camera And Viewer For Android [Apk]</a>
+</span>
+
+                      -
+                    
+<span class="item-snippet">
+[image: android nexus sphere camera]
+For the best Android experience all of us prefer Nexus devices as those 
+devices gets all the Android features and updat...
+</span>
+<div class="item-time">
+5 days ago
+</div>
+</div>
+</div>
+<div style="clear: both;"></div>
+</li>
+</ul>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=718678011895667725&widgetType=BlogList&widgetId=BlogList1&action=editWidget&sectionId=sidebar" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;BlogList1&quot;));" target="configBlogList1" title="Edit">
+<img alt="" height="18" src="./Jquery Basic Form Validation Guide     QUERYEXE_files/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div>
+</div></div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div class="container">
+<div class="footer-widgets">
+<div class="inner">
+<div class="column section" id="column1"></div>
+<div class="column section" id="column2"></div>
+<div class="column section" id="column3"></div>
+<div class="column section" id="column4"></div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="footer-link">Copyright © 2013 <a href="http://www.queryexe.com/" id="copyright">QUERYEXE</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+//<![CDATA[
+window['PR_SHOULD_USE_CONTINUATION']=true;var prettyPrintOne;var prettyPrint;(function(){var win=window;var FLOW_CONTROL_KEYWORDS=["break,continue,do,else,for,if,return,while"];var C_KEYWORDS=[FLOW_CONTROL_KEYWORDS,"auto,case,char,const,default,"+"double,enum,extern,float,goto,int,long,register,short,signed,sizeof,"+"static,struct,switch,typedef,union,unsigned,void,volatile"];var COMMON_KEYWORDS=[C_KEYWORDS,"catch,class,delete,false,import,"+"new,operator,private,protected,public,this,throw,true,try,typeof"];var CPP_KEYWORDS=[COMMON_KEYWORDS,"alignof,align_union,asm,axiom,bool,"+"concept,concept_map,const_cast,constexpr,decltype,"+"dynamic_cast,explicit,export,friend,inline,late_check,"+"mutable,namespace,nullptr,reinterpret_cast,static_assert,static_cast,"+"template,typeid,typename,using,virtual,where"];var JAVA_KEYWORDS=[COMMON_KEYWORDS,"abstract,boolean,byte,extends,final,finally,implements,import,"+"instanceof,null,native,package,strictfp,super,synchronized,throws,"+"transient"];var CSHARP_KEYWORDS=[JAVA_KEYWORDS,"as,base,by,checked,decimal,delegate,descending,dynamic,event,"+"fixed,foreach,from,group,implicit,in,interface,internal,into,is,let,"+"lock,object,out,override,orderby,params,partial,readonly,ref,sbyte,"+"sealed,stackalloc,string,select,uint,ulong,unchecked,unsafe,ushort,"+"var,virtual,where"];var COFFEE_KEYWORDS="all,and,by,catch,class,else,extends,false,finally,"+"for,if,in,is,isnt,loop,new,no,not,null,of,off,on,or,return,super,then,"+"throw,true,try,unless,until,when,while,yes";var JSCRIPT_KEYWORDS=[COMMON_KEYWORDS,"debugger,eval,export,function,get,null,set,undefined,var,with,"+"Infinity,NaN"];var PERL_KEYWORDS="caller,delete,die,do,dump,elsif,eval,exit,foreach,for,"+"goto,if,import,last,local,my,next,no,our,print,package,redo,require,"+"sub,undef,unless,until,use,wantarray,while,BEGIN,END";var PYTHON_KEYWORDS=[FLOW_CONTROL_KEYWORDS,"and,as,assert,class,def,del,"+"elif,except,exec,finally,from,global,import,in,is,lambda,"+"nonlocal,not,or,pass,print,raise,try,with,yield,"+"False,True,None"];var RUBY_KEYWORDS=[FLOW_CONTROL_KEYWORDS,"alias,and,begin,case,class,"+"def,defined,elsif,end,ensure,false,in,module,next,nil,not,or,redo,"+"rescue,retry,self,super,then,true,undef,unless,until,when,yield,"+"BEGIN,END"];var SH_KEYWORDS=[FLOW_CONTROL_KEYWORDS,"case,done,elif,esac,eval,fi,"+"function,in,local,set,then,until"];var ALL_KEYWORDS=[CPP_KEYWORDS,CSHARP_KEYWORDS,JSCRIPT_KEYWORDS,PERL_KEYWORDS+PYTHON_KEYWORDS,RUBY_KEYWORDS,SH_KEYWORDS];var C_TYPES=/^(DIR|FILE|vector|(de|priority_)?queue|list|stack|(const_)?iterator|(multi)?(set|map)|bitset|u?(int|float)\d*)\b/;var PR_STRING='str';var PR_KEYWORD='kwd';var PR_COMMENT='com';var PR_TYPE='typ';var PR_LITERAL='lit';var PR_PUNCTUATION='pun';var PR_PLAIN='pln';var PR_TAG='tag';var PR_DECLARATION='dec';var PR_SOURCE='src';var PR_ATTRIB_NAME='atn';var PR_ATTRIB_VALUE='atv';var PR_NOCODE='nocode';var REGEXP_PRECEDER_PATTERN='(?:^^\\.?|[+-]|[!=]=?=?|\\#|%=?|&&?=?|\\(|\\*=?|[+\\-]=|->|\\/=?|::?|<<?=?|>>?>?=?|,|;|\\?|@|\\[|~|{|\\^\\^?=?|\\|\\|?=?|break|case|continue|delete|do|else|finally|instanceof|return|throw|try|typeof)\\s*';function combinePrefixPatterns(regexs){var capturedGroupIndex=0;var needToFoldCase=false;var ignoreCase=false;for(var i=0,n=regexs.length;i<n;++i){var regex=regexs[i];if(regex.ignoreCase){ignoreCase=true}else if(/[a-z]/i.test(regex.source.replace(/\\u[0-9a-f]{4}|\\x[0-9a-f]{2}|\\[^ux]/gi,''))){needToFoldCase=true;ignoreCase=false;break}}var escapeCharToCodeUnit={'b':8,'t':9,'n':0xa,'v':0xb,'f':0xc,'r':0xd};function decodeEscape(charsetPart){var cc0=charsetPart.charCodeAt(0);if(cc0!==92){return cc0}var c1=charsetPart.charAt(1);cc0=escapeCharToCodeUnit[c1];if(cc0){return cc0}else if('0'<=c1&&c1<='7'){return parseInt(charsetPart.substring(1),8)}else if(c1==='u'||c1==='x'){return parseInt(charsetPart.substring(2),16)}else{return charsetPart.charCodeAt(1)}}function encodeEscape(charCode){if(charCode<0x20){return(charCode<0x10?'\\x0':'\\x')+charCode.toString(16)}var ch=String.fromCharCode(charCode);return(ch==='\\'||ch==='-'||ch===']'||ch==='^')?"\\"+ch:ch}function caseFoldCharset(charSet){var charsetParts=charSet.substring(1,charSet.length-1).match(new RegExp('\\\\u[0-9A-Fa-f]{4}'+'|\\\\x[0-9A-Fa-f]{2}'+'|\\\\[0-3][0-7]{0,2}'+'|\\\\[0-7]{1,2}'+'|\\\\[\\s\\S]'+'|-'+'|[^-\\\\]','g'));var ranges=[];var inverse=charsetParts[0]==='^';var out=['['];if(inverse){out.push('^')}for(var i=inverse?1:0,n=charsetParts.length;i<n;++i){var p=charsetParts[i];if(/\\[bdsw]/i.test(p)){out.push(p)}else{var start=decodeEscape(p);var end;if(i+2<n&&'-'===charsetParts[i+1]){end=decodeEscape(charsetParts[i+2]);i+=2}else{end=start}ranges.push([start,end]);if(!(end<65||start>122)){if(!(end<65||start>90)){ranges.push([Math.max(65,start)|32,Math.min(end,90)|32])}if(!(end<97||start>122)){ranges.push([Math.max(97,start)&~32,Math.min(end,122)&~32])}}}}ranges.sort(function(a,b){return(a[0]-b[0])||(b[1]-a[1])});var consolidatedRanges=[];var lastRange=[];for(var i=0;i<ranges.length;++i){var range=ranges[i];if(range[0]<=lastRange[1]+1){lastRange[1]=Math.max(lastRange[1],range[1])}else{consolidatedRanges.push(lastRange=range)}}for(var i=0;i<consolidatedRanges.length;++i){var range=consolidatedRanges[i];out.push(encodeEscape(range[0]));if(range[1]>range[0]){if(range[1]+1>range[0]){out.push('-')}out.push(encodeEscape(range[1]))}}out.push(']');return out.join('')}function allowAnywhereFoldCaseAndRenumberGroups(regex){var parts=regex.source.match(new RegExp('(?:'+'\\[(?:[^\\x5C\\x5D]|\\\\[\\s\\S])*\\]'+'|\\\\u[A-Fa-f0-9]{4}'+'|\\\\x[A-Fa-f0-9]{2}'+'|\\\\[0-9]+'+'|\\\\[^ux0-9]'+'|\\(\\?[:!=]'+'|[\\(\\)\\^]'+'|[^\\x5B\\x5C\\(\\)\\^]+'+')','g'));var n=parts.length;var capturedGroups=[];for(var i=0,groupIndex=0;i<n;++i){var p=parts[i];if(p==='('){++groupIndex}else if('\\'===p.charAt(0)){var decimalValue=+p.substring(1);if(decimalValue){if(decimalValue<=groupIndex){capturedGroups[decimalValue]=-1}else{parts[i]=encodeEscape(decimalValue)}}}}for(var i=1;i<capturedGroups.length;++i){if(-1===capturedGroups[i]){capturedGroups[i]=++capturedGroupIndex}}for(var i=0,groupIndex=0;i<n;++i){var p=parts[i];if(p==='('){++groupIndex;if(!capturedGroups[groupIndex]){parts[i]='(?:'}}else if('\\'===p.charAt(0)){var decimalValue=+p.substring(1);if(decimalValue&&decimalValue<=groupIndex){parts[i]='\\'+capturedGroups[decimalValue]}}}for(var i=0;i<n;++i){if('^'===parts[i]&&'^'!==parts[i+1]){parts[i]=''}}if(regex.ignoreCase&&needToFoldCase){for(var i=0;i<n;++i){var p=parts[i];var ch0=p.charAt(0);if(p.length>=2&&ch0==='['){parts[i]=caseFoldCharset(p)}else if(ch0!=='\\'){parts[i]=p.replace(/[a-zA-Z]/g,function(ch){var cc=ch.charCodeAt(0);return'['+String.fromCharCode(cc&~32,cc|32)+']'})}}}return parts.join('')}var rewritten=[];for(var i=0,n=regexs.length;i<n;++i){var regex=regexs[i];if(regex.global||regex.multiline){throw new Error(''+regex);}rewritten.push('(?:'+allowAnywhereFoldCaseAndRenumberGroups(regex)+')')}return new RegExp(rewritten.join('|'),ignoreCase?'gi':'g')}function extractSourceSpans(node,isPreformatted){var nocode=/(?:^|\s)nocode(?:\s|$)/;var chunks=[];var length=0;var spans=[];var k=0;function walk(node){switch(node.nodeType){case 1:if(nocode.test(node.className)){return}for(var child=node.firstChild;child;child=child.nextSibling){walk(child)}var nodeName=node.nodeName.toLowerCase();if('br'===nodeName||'li'===nodeName){chunks[k]='\n';spans[k<<1]=length++;spans[(k++<<1)|1]=node}break;case 3:case 4:var text=node.nodeValue;if(text.length){if(!isPreformatted){text=text.replace(/[ \t\r\n]+/g,' ')}else{text=text.replace(/\r\n?/g,'\n')}chunks[k]=text;spans[k<<1]=length;length+=text.length;spans[(k++<<1)|1]=node}break}}walk(node);return{sourceCode:chunks.join('').replace(/\n$/,''),spans:spans}}function appendDecorations(basePos,sourceCode,langHandler,out){if(!sourceCode){return}var job={sourceCode:sourceCode,basePos:basePos};langHandler(job);out.push.apply(out,job.decorations)}var notWs=/\S/;function childContentWrapper(element){var wrapper=undefined;for(var c=element.firstChild;c;c=c.nextSibling){var type=c.nodeType;wrapper=(type===1)?(wrapper?element:c):(type===3)?(notWs.test(c.nodeValue)?element:wrapper):wrapper}return wrapper===element?undefined:wrapper}function createSimpleLexer(shortcutStylePatterns,fallthroughStylePatterns){var shortcuts={};var tokenizer;(function(){var allPatterns=shortcutStylePatterns.concat(fallthroughStylePatterns);var allRegexs=[];var regexKeys={};for(var i=0,n=allPatterns.length;i<n;++i){var patternParts=allPatterns[i];var shortcutChars=patternParts[3];if(shortcutChars){for(var c=shortcutChars.length;--c>=0;){shortcuts[shortcutChars.charAt(c)]=patternParts}}var regex=patternParts[1];var k=''+regex;if(!regexKeys.hasOwnProperty(k)){allRegexs.push(regex);regexKeys[k]=null}}allRegexs.push(/[\0-\uffff]/);tokenizer=combinePrefixPatterns(allRegexs)})();var nPatterns=fallthroughStylePatterns.length;var decorate=function(job){var sourceCode=job.sourceCode,basePos=job.basePos;var decorations=[basePos,PR_PLAIN];var pos=0;var tokens=sourceCode.match(tokenizer)||[];var styleCache={};for(var ti=0,nTokens=tokens.length;ti<nTokens;++ti){var token=tokens[ti];var style=styleCache[token];var match=void 0;var isEmbedded;if(typeof style==='string'){isEmbedded=false}else{var patternParts=shortcuts[token.charAt(0)];if(patternParts){match=token.match(patternParts[1]);style=patternParts[0]}else{for(var i=0;i<nPatterns;++i){patternParts=fallthroughStylePatterns[i];match=token.match(patternParts[1]);if(match){style=patternParts[0];break}}if(!match){style=PR_PLAIN}}isEmbedded=style.length>=5&&'lang-'===style.substring(0,5);if(isEmbedded&&!(match&&typeof match[1]==='string')){isEmbedded=false;style=PR_SOURCE}if(!isEmbedded){styleCache[token]=style}}var tokenStart=pos;pos+=token.length;if(!isEmbedded){decorations.push(basePos+tokenStart,style)}else{var embeddedSource=match[1];var embeddedSourceStart=token.indexOf(embeddedSource);var embeddedSourceEnd=embeddedSourceStart+embeddedSource.length;if(match[2]){embeddedSourceEnd=token.length-match[2].length;embeddedSourceStart=embeddedSourceEnd-embeddedSource.length}var lang=style.substring(5);appendDecorations(basePos+tokenStart,token.substring(0,embeddedSourceStart),decorate,decorations);appendDecorations(basePos+tokenStart+embeddedSourceStart,embeddedSource,langHandlerForExtension(lang,embeddedSource),decorations);appendDecorations(basePos+tokenStart+embeddedSourceEnd,token.substring(embeddedSourceEnd),decorate,decorations)}}job.decorations=decorations};return decorate}function sourceDecorator(options){var shortcutStylePatterns=[],fallthroughStylePatterns=[];if(options['tripleQuotedStrings']){shortcutStylePatterns.push([PR_STRING,/^(?:\'\'\'(?:[^\'\\]|\\[\s\S]|\'{1,2}(?=[^\']))*(?:\'\'\'|$)|\"\"\"(?:[^\"\\]|\\[\s\S]|\"{1,2}(?=[^\"]))*(?:\"\"\"|$)|\'(?:[^\\\']|\\[\s\S])*(?:\'|$)|\"(?:[^\\\"]|\\[\s\S])*(?:\"|$))/,null,'\'"'])}else if(options['multiLineStrings']){shortcutStylePatterns.push([PR_STRING,/^(?:\'(?:[^\\\']|\\[\s\S])*(?:\'|$)|\"(?:[^\\\"]|\\[\s\S])*(?:\"|$)|\`(?:[^\\\`]|\\[\s\S])*(?:\`|$))/,null,'\'"`'])}else{shortcutStylePatterns.push([PR_STRING,/^(?:\'(?:[^\\\'\r\n]|\\.)*(?:\'|$)|\"(?:[^\\\"\r\n]|\\.)*(?:\"|$))/,null,'"\''])}if(options['verbatimStrings']){fallthroughStylePatterns.push([PR_STRING,/^@\"(?:[^\"]|\"\")*(?:\"|$)/,null])}var hc=options['hashComments'];if(hc){if(options['cStyleComments']){if(hc>1){shortcutStylePatterns.push([PR_COMMENT,/^#(?:##(?:[^#]|#(?!##))*(?:###|$)|.*)/,null,'#'])}else{shortcutStylePatterns.push([PR_COMMENT,/^#(?:(?:define|e(?:l|nd)if|else|error|ifn?def|include|line|pragma|undef|warning)\b|[^\r\n]*)/,null,'#'])}fallthroughStylePatterns.push([PR_STRING,/^<(?:(?:(?:\.\.\/)*|\/?)(?:[\w-]+(?:\/[\w-]+)+)?[\w-]+\.h(?:h|pp|\+\+)?|[a-z]\w*)>/,null])}else{shortcutStylePatterns.push([PR_COMMENT,/^#[^\r\n]*/,null,'#'])}}if(options['cStyleComments']){fallthroughStylePatterns.push([PR_COMMENT,/^\/\/[^\r\n]*/,null]);fallthroughStylePatterns.push([PR_COMMENT,/^\/\*[\s\S]*?(?:\*\/|$)/,null])}if(options['regexLiterals']){var REGEX_LITERAL=('/(?=[^/*])'+'(?:[^/\\x5B\\x5C]'+'|\\x5C[\\s\\S]'+'|\\x5B(?:[^\\x5C\\x5D]|\\x5C[\\s\\S])*(?:\\x5D|$))+'+'/');fallthroughStylePatterns.push(['lang-regex',new RegExp('^'+REGEXP_PRECEDER_PATTERN+'('+REGEX_LITERAL+')')])}var types=options['types'];if(types){fallthroughStylePatterns.push([PR_TYPE,types])}var keywords=(""+options['keywords']).replace(/^ | $/g,'');if(keywords.length){fallthroughStylePatterns.push([PR_KEYWORD,new RegExp('^(?:'+keywords.replace(/[\s,]+/g,'|')+')\\b'),null])}shortcutStylePatterns.push([PR_PLAIN,/^\s+/,null,' \r\n\t\xA0']);var punctuation=/^.[^\s\w\.$@\'\"\`\/\\]*/;fallthroughStylePatterns.push([PR_LITERAL,/^@[a-z_$][a-z_$@0-9]*/i,null],[PR_TYPE,/^(?:[@_]?[A-Z]+[a-z][A-Za-z_$@0-9]*|\w+_t\b)/,null],[PR_PLAIN,/^[a-z_$][a-z_$@0-9]*/i,null],[PR_LITERAL,new RegExp('^(?:'+'0x[a-f0-9]+'+'|(?:\\d(?:_\\d+)*\\d*(?:\\.\\d*)?|\\.\\d\\+)'+'(?:e[+\\-]?\\d+)?'+')'+'[a-z]*','i'),null,'0123456789'],[PR_PLAIN,/^\\[\s\S]?/,null],[PR_PUNCTUATION,punctuation,null]);return createSimpleLexer(shortcutStylePatterns,fallthroughStylePatterns)}var decorateSource=sourceDecorator({'keywords':ALL_KEYWORDS,'hashComments':true,'cStyleComments':true,'multiLineStrings':true,'regexLiterals':true});function numberLines(node,opt_startLineNum,isPreformatted){var nocode=/(?:^|\s)nocode(?:\s|$)/;var lineBreak=/\r\n?|\n/;var document=node.ownerDocument;var li=document.createElement('li');while(node.firstChild){li.appendChild(node.firstChild)}var listItems=[li];function walk(node){switch(node.nodeType){case 1:if(nocode.test(node.className)){break}if('br'===node.nodeName){breakAfter(node);if(node.parentNode){node.parentNode.removeChild(node)}}else{for(var child=node.firstChild;child;child=child.nextSibling){walk(child)}}break;case 3:case 4:if(isPreformatted){var text=node.nodeValue;var match=text.match(lineBreak);if(match){var firstLine=text.substring(0,match.index);node.nodeValue=firstLine;var tail=text.substring(match.index+match[0].length);if(tail){var parent=node.parentNode;parent.insertBefore(document.createTextNode(tail),node.nextSibling)}breakAfter(node);if(!firstLine){node.parentNode.removeChild(node)}}}break}}function breakAfter(lineEndNode){while(!lineEndNode.nextSibling){lineEndNode=lineEndNode.parentNode;if(!lineEndNode){return}}function breakLeftOf(limit,copy){var rightSide=copy?limit.cloneNode(false):limit;var parent=limit.parentNode;if(parent){var parentClone=breakLeftOf(parent,1);var next=limit.nextSibling;parentClone.appendChild(rightSide);for(var sibling=next;sibling;sibling=next){next=sibling.nextSibling;parentClone.appendChild(sibling)}}return rightSide}var copiedListItem=breakLeftOf(lineEndNode.nextSibling,0);for(var parent;(parent=copiedListItem.parentNode)&&parent.nodeType===1;){copiedListItem=parent}listItems.push(copiedListItem)}for(var i=0;i<listItems.length;++i){walk(listItems[i])}if(opt_startLineNum===(opt_startLineNum|0)){listItems[0].setAttribute('value',opt_startLineNum)}var ol=document.createElement('ol');ol.className='linenums';var offset=Math.max(0,((opt_startLineNum-1))|0)||0;for(var i=0,n=listItems.length;i<n;++i){li=listItems[i];li.className='L'+((i+offset)%10);if(!li.firstChild){li.appendChild(document.createTextNode('\xA0'))}ol.appendChild(li)}node.appendChild(ol)}function recombineTagsAndDecorations(job){var isIE8OrEarlier=/\bMSIE\s(\d+)/.exec(navigator.userAgent);isIE8OrEarlier=isIE8OrEarlier&&+isIE8OrEarlier[1]<=8;var newlineRe=/\n/g;var source=job.sourceCode;var sourceLength=source.length;var sourceIndex=0;var spans=job.spans;var nSpans=spans.length;var spanIndex=0;var decorations=job.decorations;var nDecorations=decorations.length;var decorationIndex=0;decorations[nDecorations]=sourceLength;var decPos,i;for(i=decPos=0;i<nDecorations;){if(decorations[i]!==decorations[i+2]){decorations[decPos++]=decorations[i++];decorations[decPos++]=decorations[i++]}else{i+=2}}nDecorations=decPos;for(i=decPos=0;i<nDecorations;){var startPos=decorations[i];var startDec=decorations[i+1];var end=i+2;while(end+2<=nDecorations&&decorations[end+1]===startDec){end+=2}decorations[decPos++]=startPos;decorations[decPos++]=startDec;i=end}nDecorations=decorations.length=decPos;var sourceNode=job.sourceNode;var oldDisplay;if(sourceNode){oldDisplay=sourceNode.style.display;sourceNode.style.display='none'}try{var decoration=null;while(spanIndex<nSpans){var spanStart=spans[spanIndex];var spanEnd=spans[spanIndex+2]||sourceLength;var decEnd=decorations[decorationIndex+2]||sourceLength;var end=Math.min(spanEnd,decEnd);var textNode=spans[spanIndex+1];var styledText;if(textNode.nodeType!==1&&(styledText=source.substring(sourceIndex,end))){if(isIE8OrEarlier){styledText=styledText.replace(newlineRe,'\r')}textNode.nodeValue=styledText;var document=textNode.ownerDocument;var span=document.createElement('span');span.className=decorations[decorationIndex+1];var parentNode=textNode.parentNode;parentNode.replaceChild(span,textNode);span.appendChild(textNode);if(sourceIndex<spanEnd){spans[spanIndex+1]=textNode=document.createTextNode(source.substring(end,spanEnd));parentNode.insertBefore(textNode,span.nextSibling)}}sourceIndex=end;if(sourceIndex>=spanEnd){spanIndex+=2}if(sourceIndex>=decEnd){decorationIndex+=2}}}finally{if(sourceNode){sourceNode.style.display=oldDisplay}}}var langHandlerRegistry={};function registerLangHandler(handler,fileExtensions){for(var i=fileExtensions.length;--i>=0;){var ext=fileExtensions[i];if(!langHandlerRegistry.hasOwnProperty(ext)){langHandlerRegistry[ext]=handler}else if(win['console']){console['warn']('cannot override language handler %s',ext)}}}function langHandlerForExtension(extension,source){if(!(extension&&langHandlerRegistry.hasOwnProperty(extension))){extension=/^\s*</.test(source)?'default-markup':'default-code'}return langHandlerRegistry[extension]}registerLangHandler(decorateSource,['default-code']);registerLangHandler(createSimpleLexer([],[[PR_PLAIN,/^[^<?]+/],[PR_DECLARATION,/^<!\w[^>]*(?:>|$)/],[PR_COMMENT,/^<\!--[\s\S]*?(?:-\->|$)/],['lang-',/^<\?([\s\S]+?)(?:\?>|$)/],['lang-',/^<%([\s\S]+?)(?:%>|$)/],[PR_PUNCTUATION,/^(?:<[%?]|[%?]>)/],['lang-',/^<xmp\b[^>]*>([\s\S]+?)<\/xmp\b[^>]*>/i],['lang-js',/^<script\b[^>]*>([\s\S]*?)(<\/script\b[^>]*>)/i],['lang-css',/^<style\b[^>]*>([\s\S]*?)(<\/style\b[^>]*>)/i],['lang-in.tag',/^(<\/?[a-z][^<>]*>)/i]]),['default-markup','htm','html','mxml','xhtml','xml','xsl']);registerLangHandler(createSimpleLexer([[PR_PLAIN,/^[\s]+/,null,' \t\r\n'],[PR_ATTRIB_VALUE,/^(?:\"[^\"]*\"?|\'[^\']*\'?)/,null,'\"\'']],[[PR_TAG,/^^<\/?[a-z](?:[\w.:-]*\w)?|\/?>$/i],[PR_ATTRIB_NAME,/^(?!style[\s=]|on)[a-z](?:[\w:-]*\w)?/i],['lang-uq.val',/^=\s*([^>\'\"\s]*(?:[^>\'\"\s\/]|\/(?=\s)))/],[PR_PUNCTUATION,/^[=<>\/]+/],['lang-js',/^on\w+\s*=\s*\"([^\"]+)\"/i],['lang-js',/^on\w+\s*=\s*\'([^\']+)\'/i],['lang-js',/^on\w+\s*=\s*([^\"\'>\s]+)/i],['lang-css',/^style\s*=\s*\"([^\"]+)\"/i],['lang-css',/^style\s*=\s*\'([^\']+)\'/i],['lang-css',/^style\s*=\s*([^\"\'>\s]+)/i]]),['in.tag']);registerLangHandler(createSimpleLexer([],[[PR_ATTRIB_VALUE,/^[\s\S]+/]]),['uq.val']);registerLangHandler(sourceDecorator({'keywords':CPP_KEYWORDS,'hashComments':true,'cStyleComments':true,'types':C_TYPES}),['c','cc','cpp','cxx','cyc','m']);registerLangHandler(sourceDecorator({'keywords':'null,true,false'}),['json']);registerLangHandler(sourceDecorator({'keywords':CSHARP_KEYWORDS,'hashComments':true,'cStyleComments':true,'verbatimStrings':true,'types':C_TYPES}),['cs']);registerLangHandler(sourceDecorator({'keywords':JAVA_KEYWORDS,'cStyleComments':true}),['java']);registerLangHandler(sourceDecorator({'keywords':SH_KEYWORDS,'hashComments':true,'multiLineStrings':true}),['bsh','csh','sh']);registerLangHandler(sourceDecorator({'keywords':PYTHON_KEYWORDS,'hashComments':true,'multiLineStrings':true,'tripleQuotedStrings':true}),['cv','py']);registerLangHandler(sourceDecorator({'keywords':PERL_KEYWORDS,'hashComments':true,'multiLineStrings':true,'regexLiterals':true}),['perl','pl','pm']);registerLangHandler(sourceDecorator({'keywords':RUBY_KEYWORDS,'hashComments':true,'multiLineStrings':true,'regexLiterals':true}),['rb']);registerLangHandler(sourceDecorator({'keywords':JSCRIPT_KEYWORDS,'cStyleComments':true,'regexLiterals':true}),['js']);registerLangHandler(sourceDecorator({'keywords':COFFEE_KEYWORDS,'hashComments':3,'cStyleComments':true,'multilineStrings':true,'tripleQuotedStrings':true,'regexLiterals':true}),['coffee']);registerLangHandler(createSimpleLexer([],[[PR_STRING,/^[\s\S]+/]]),['regex']);function applyDecorator(job){var opt_langExtension=job.langExtension;try{var sourceAndSpans=extractSourceSpans(job.sourceNode,job.pre);var source=sourceAndSpans.sourceCode;job.sourceCode=source;job.spans=sourceAndSpans.spans;job.basePos=0;langHandlerForExtension(opt_langExtension,source)(job);recombineTagsAndDecorations(job)}catch(e){if(win['console']){console['log'](e&&e['stack']?e['stack']:e)}}}function prettyPrintOne(sourceCodeHtml,opt_langExtension,opt_numberLines){var container=document.createElement('pre');container.innerHTML=sourceCodeHtml;if(opt_numberLines){numberLines(container,opt_numberLines,true)}var job={langExtension:opt_langExtension,numberLines:opt_numberLines,sourceNode:container,pre:1};applyDecorator(job);return container.innerHTML}function prettyPrint(opt_whenDone){function byTagName(tn){return document.getElementsByTagName(tn)}var codeSegments=[byTagName('pre'),byTagName('code'),byTagName('xmp')];var elements=[];for(var i=0;i<codeSegments.length;++i){for(var j=0,n=codeSegments[i].length;j<n;++j){elements.push(codeSegments[i][j])}}codeSegments=null;var clock=Date;if(!clock['now']){clock={'now':function(){return+(new Date)}}}var k=0;var prettyPrintingJob;var langExtensionRe=/\blang(?:uage)?-([\w.]+)(?!\S)/;var prettyPrintRe=/\bprettyprint\b/;var prettyPrintedRe=/\bprettyprinted\b/;var preformattedTagNameRe=/pre|xmp/i;var codeRe=/^code$/i;var preCodeXmpRe=/^(?:pre|code|xmp)$/i;function doWork(){var endTime=(win['PR_SHOULD_USE_CONTINUATION']?clock['now']()+250:Infinity);for(;k<elements.length&&clock['now']()<endTime;k++){var cs=elements[k];var className=cs.className;if(prettyPrintRe.test(className)&&!prettyPrintedRe.test(className)){var nested=false;for(var p=cs.parentNode;p;p=p.parentNode){var tn=p.tagName;if(preCodeXmpRe.test(tn)&&p.className&&prettyPrintRe.test(p.className)){nested=true;break}}if(!nested){cs.className+=' prettyprinted';var langExtension=className.match(langExtensionRe);var wrapper;if(!langExtension&&(wrapper=childContentWrapper(cs))&&codeRe.test(wrapper.tagName)){langExtension=wrapper.className.match(langExtensionRe)}if(langExtension){langExtension=langExtension[1]}var preformatted;if(preformattedTagNameRe.test(cs.tagName)){preformatted=1}else{var currentStyle=cs['currentStyle'];var whitespace=(currentStyle?currentStyle['whiteSpace']:(document.defaultView&&document.defaultView.getComputedStyle)?document.defaultView.getComputedStyle(cs,null).getPropertyValue('white-space'):0);preformatted=whitespace&&'pre'===whitespace.substring(0,3)}var lineNums=cs.className.match(/\blinenums\b(?::(\d+))?/);lineNums=lineNums?lineNums[1]&&lineNums[1].length?+lineNums[1]:true:false;if(lineNums){numberLines(cs,lineNums,preformatted)}prettyPrintingJob={langExtension:langExtension,sourceNode:cs,numberLines:lineNums,pre:preformatted};applyDecorator(prettyPrintingJob)}}}if(k<elements.length){setTimeout(doWork,250)}else if(opt_whenDone){opt_whenDone()}}doWork()}var PR=win['PR']={'createSimpleLexer':createSimpleLexer,'registerLangHandler':registerLangHandler,'sourceDecorator':sourceDecorator,'PR_ATTRIB_NAME':PR_ATTRIB_NAME,'PR_ATTRIB_VALUE':PR_ATTRIB_VALUE,'PR_COMMENT':PR_COMMENT,'PR_DECLARATION':PR_DECLARATION,'PR_KEYWORD':PR_KEYWORD,'PR_LITERAL':PR_LITERAL,'PR_NOCODE':PR_NOCODE,'PR_PLAIN':PR_PLAIN,'PR_PUNCTUATION':PR_PUNCTUATION,'PR_SOURCE':PR_SOURCE,'PR_STRING':PR_STRING,'PR_TAG':PR_TAG,'PR_TYPE':PR_TYPE,'prettyPrintOne':win['prettyPrintOne']=prettyPrintOne,'prettyPrint':win['prettyPrint']=prettyPrint};if(typeof define==="function"&&define['amd']){define("google-code-prettify",[],function(){return PR})}})();
+//]]>
+</script>
+<script>
+prettyPrint();
+</script>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('widgetJsBefore');
+</script><script type="text/javascript" src="./Jquery Basic Form Validation Guide     QUERYEXE_files/4120254780-widgets.js"></script>
+<script type="text/javascript" src="./Jquery Basic Form Validation Guide     QUERYEXE_files/plusone.js" gapi_processed="true"></script>
+<script type="text/javascript">
+if (typeof(BLOG_attachCsiOnload) != 'undefined' && BLOG_attachCsiOnload != null) { window['blogger_templates_experiment_id'] = "templatesV1";window['blogger_blog_id'] = '718678011895667725';BLOG_attachCsiOnload('item_'); }_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d718678011895667725','//www.queryexe.com/2013/02/jquery-basic-form-validation.html','718678011895667725');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '718678011895667725', 'bloggerUrl': 'http://www.blogger.com', 'title': 'QUERYEXE', 'pageType': 'item', 'url': 'http://www.queryexe.com/2013/02/jquery-basic-form-validation.html', 'canonicalUrl': 'http://www.queryexe.com/2013/02/jquery-basic-form-validation.html', 'canonicalHomepageUrl': 'http://www.queryexe.com/', 'homepageUrl': 'http://www.queryexe.com/', 'blogspotFaviconUrl': 'http://www.queryexe.com/favicon.ico', 'enabledCommentProfileImages': true, 'adultContent': false, 'disableAdSenseWidget': false, 'analyticsAccountNumber': '', 'searchLabel': '', 'searchQuery': '', 'pageName': 'Jquery Basic Form Validation Guide ?', 'pageTitle': 'QUERYEXE: Jquery Basic Form Validation Guide ?', 'encoding': 'UTF-8', 'locale': 'en_GB', 'localeUnderscoreDelimited': 'en_gb', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'languageDirection': 'ltr', 'feedLinks': '\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42QUERYEXE - Atom\42 href\75\42http://www.queryexe.com/feeds/posts/default\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/rss+xml\42 title\75\42QUERYEXE - RSS\42 href\75\42http://www.queryexe.com/feeds/posts/default?alt\75rss\42 /\76\n\74link rel\75\42service.post\42 type\75\42application/atom+xml\42 title\75\42QUERYEXE - Atom\42 href\75\42http://www.blogger.com/feeds/718678011895667725/posts/default\42 /\76\n\n\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42QUERYEXE - Atom\42 href\75\42http://www.queryexe.com/feeds/8013311169137678549/comments/default\42 /\76\n', 'meTag': '', 'openIdOpTag': '', 'postImageThumbnailUrl': 'http://2.bp.blogspot.com/-2I-797DoanE/USouHper1hI/AAAAAAAAAGs/DblTcIXLktE/s72-c/basic-jquery-form-validation.JPG', 'imageSrcTag': '\74link rel\75\42image_src\42 href\75\42http://2.bp.blogspot.com/-2I-797DoanE/USouHper1hI/AAAAAAAAAGs/DblTcIXLktE/s72-c/basic-jquery-form-validation.JPG\42 /\76\n', 'latencyHeadScript': '\74script type\75\42text/javascript\42\76(function() { var b\75window,e\75\42jstiming\42,g\75\42tick\42;(function(){function d(a){this.t\75{};this.tick\75function(a,d,c){c\75void 0!\75c?c:(new Date).getTime();this.t[a]\75[c,d]};this[g](\42start\42,null,a)}var a\75new d;b.jstiming\75{Timer:d,load:a};if(b.performance\46\46b.performance.timing){var a\75b.performance.timing,c\75b[e].load,f\75a.navigationStart,a\75a.responseStart;0\74f\46\46a\76\75f\46\46(c[g](\42_wtsrt\42,void 0,f),c[g](\42wtsrt_\42,\42_wtsrt\42,a),c[g](\42tbsd_\42,\42wtsrt_\42))}try{a\75null,b.chrome\46\46b.chrome.csi\46\46(a\75Math.floor(b.chrome.csi().pageT),c\46\0460\74f\46\46(c[g](\42_tbnd\42,void 0,b.chrome.csi().startE),\nc[g](\42tbnd_\42,\42_tbnd\42,f))),null\75\75a\46\46b.gtbExternal\46\46(a\75b.gtbExternal.pageT()),null\75\75a\46\46b.external\46\46(a\75b.external.pageT,c\46\0460\74f\46\46(c[g](\42_tbnd\42,void 0,b.external.startE),c[g](\42tbnd_\42,\42_tbnd\42,f))),a\46\46(b[e].pt\75a)}catch(l){}})();b.tickAboveFold\75function(d){var a\0750;if(d.offsetParent){do a+\75d.offsetTop;while(d\75d.offsetParent)}d\75a;750\76\75d\46\46b[e].load[g](\42aft\42)};var h\75!1;function k(){h||(h\75!0,b[e].load[g](\42firstScrollTime\42))}b.addEventListener?b.addEventListener(\42scroll\42,k,!1):b.attachEvent(\42onscroll\42,k);\n })();\74/script\076', 'mobileHeadScript': '', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/15de8d1bfc9ff1d1', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'sf': 'n', 'tf': ''}}, {'name': 'skin', 'data': {'vars': {}, 'override': '.demobtn{\n	display:block;\n	width:100px;\n	height:37px;\n	background:url(\47http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/48/Drives-Globe-Metro-icon.png\47) no-repeat;\n	padding:13px 0 0 55px;\n\n	}\n	.downloadbtn{\n	display:block;\n	width:120px;\n	height:37px;\n	background:url(\47http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/48/Apps-Internet-Download-Manager-Metro-icon.png\47) no-repeat;\n	padding:13px 0 0 55px;\n\n	}\n.btncontainer{\ntext-align:center;\npadding:0 0 0 50px;\n}'}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '/?view\75classic'}, 'flipcard': {'name': 'flipcard', 'url': '/?view\75flipcard'}, 'magazine': {'name': 'magazine', 'url': '/?view\75magazine'}, 'mosaic': {'name': 'mosaic', 'url': '/?view\75mosaic'}, 'sidebar': {'name': 'sidebar', 'url': '/?view\75sidebar'}, 'snapshot': {'name': 'snapshot', 'url': '/?view\75snapshot'}, 'timeslide': {'name': 'timeslide', 'url': '/?view\75timeslide'}}}]);
+_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList1', 'topnav', null, document.getElementById('PageList1'), {'title': 'Pages', 'links': [{'href': 'http://www.queryexe.com/', 'title': 'Home', 'isCurrentPage': false}, {'href': 'http://www.queryexe.com/p/about.html', 'title': 'About', 'isCurrentPage': false}], 'mobile': false}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 'sidebar', null, document.getElementById('Label1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PopularPostsView', new _WidgetInfo('PopularPosts1', 'sidebar', null, document.getElementById('PopularPosts1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogListView', new _WidgetInfo('BlogList1', 'sidebar', null, document.getElementById('BlogList1'), {'numItemsToShow': 0, 'totalItems': 1}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', null, document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': '//www.blogger.com/static/v1/jsbin/585343694-lbx__en_gb.js', 'lightboxCssUrl': '//www.blogger.com/static/v1/v-css/228702327-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList1', 'null', null, document.getElementById('PageList1'), {'title': 'Pages', 'links': [{'href': 'http://www.queryexe.com/', 'title': 'Home', 'isCurrentPage': false}], 'mobile': false}, 'displayModeFull'));
+</script>
+
+</body></html>

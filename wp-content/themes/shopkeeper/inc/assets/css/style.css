@@ -1,0 +1,217 @@
+button {
+    border: none;
+    color: #fff;
+    font-size: 0.8125rem!important;
+    line-height: 1.4em;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    background-color: #EC7A5C;
+}
+
+#ListParts {
+    margin-bottom: 10px;
+}
+
+#Etape1 label {
+    display: none;
+    float: left;
+    clear: left;
+    width: 35%;
+    margin-top: 3px;
+    text-align: right;
+}
+
+.input-wrapper {
+    width: 100%;
+    margin-top: 3px !important;
+}
+
+.not-coach {
+    float: left;
+    width: 100%;
+    ;
+}
+
+.inpt-coach {
+    float: left;
+    ;
+    width: 60%;
+}
+
+.btn-coach {
+    font-size: 12px;
+    width: 40%;
+    height: 2.5rem !important;
+}
+
+.CmdeTable {
+    border-spacing: 2px;
+    border-collapse: unset;
+}
+
+#Etape1 input[type=button],
+#Etape1 button {
+    float: left;
+    padding: 6px 20px;
+    width: 40%;
+}
+
+#ListePays input {
+    width: auto;
+}
+
+#ListeParts input {
+    width: auto;
+}
+
+.NomPart,
+.EmailPart,
+.VerifEmailPart {
+    width: 100%;
+}
+
+.TelPart {
+    width: 150px;
+    margin: 0px !important;
+}
+
+.Inpt-coach {
+    width: 50%;
+}
+
+#ListParts input {
+    border-width: 0px;
+    border: none;
+    -webkit-appearance: none;
+}
+
+#container-popup {
+    overflow: auto;
+}
+
+
+/* Modal Content */
+
+
+/* The Close Button */
+
+.close {
+    color: #aa1818;
+    float: right;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navigation {
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    width: 100%
+}
+
+u {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.envoyer {
+    text-align: center;
+    width: 100%;
+}
+
+.navigation a {
+    margin: 10px;
+    font-size: 14px;
+    background-color: #EC7A5C ;
+    padding: 10px ;
+    color: white !important;
+    width: 50px;
+}
+
+.CmdeTable th {
+    padding-left: 15px;
+}
+
+.inpt-coach {
+    width: 60%;
+}
+
+@media only screen and (max-width: 760px) {
+    .modal-dialog {
+        width: 95% !important;
+    }
+    .MtPart
+    {width:150px !important;}
+    .CmdeTable td,
+    .CmdeTable tr {
+        display: block;
+    }
+    .CmdeTable thead {
+        display: none;
+    }
+    /* Hide table headers (but not display: none;, for accessibility) */
+    .CmdeTable thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    .CmdeTable tr {
+        border: 1px solid #a58e8e;
+    }
+    .CmdeTable tr+tr {
+        margin-top: 1.5em;
+    }
+    .CmdeTable td {
+        /* make like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        background-color: #f8f5f5;
+        text-align: left;
+    }
+    #next,
+    #prev {}
+    .CmdeTable td>input {
+        width: 67%;
+    }
+    #NbrePartsRest {
+        width: 40%;
+    }
+    #ConfirmBox {
+        width: 50%;
+    }
+    .CmdeTable td:before {
+        margin-right: 3px;
+        content: attr(data-label);
+        display: inline-block;
+        float: left;
+        padding-left: 0px;
+        width: 31%;
+        font-size: 10px;
+        white-space: nowrap;
+    }
+    #Etape1 input[type=text] {}
+    #Etape1 label {
+        width: 100%;
+        font-size: 10px;
+    }
+    #Etape1 input[type=button],
+    #Etape1 button,
+    .btn-coach {
+        font-size: 8px;
+        line-height: 32px;
+        padding: 2px 2px;
+        margin-left: 0px;
+        width: 40%;
+    }
+    .inpt-coach {
+        width: 60%;
+    }
+}

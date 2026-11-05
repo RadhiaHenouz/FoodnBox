@@ -1,0 +1,49 @@
+
+---Downloaded files---
+The import files for: Default were successfully downloaded!
+Initial max execution time = 165
+Files info:
+Site URL = http://foodnbox.com
+Data file = /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/inc/demo/shopkeeper.wordpress.xml
+Widget file = not defined!
+Customizer file = /home/foodnboxbm/www/foodnbox/wp-content/themes/shopkeeper/inc/demo/shopkeeper.customizer.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---pt-ocdi/after_import---
+
